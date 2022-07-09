@@ -1,0 +1,23 @@
+{
+  "name": "viaggin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass assets/scss/main.scss assets/css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoValeri/viaggin.git"
+  },
+  "author": "Marco Valeri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoValeri/viaggin/issues"
+  },
+  "homepage": "https://github.com/MarcoValeri/viaggin#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
