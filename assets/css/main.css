@@ -5,8 +5,13 @@
 html {
   font-size: 62.5%; }
 
-body {
-  background-color: #000; }
-
-h1 {
-  color: #fff; }
+.nav {
+  padding: 2rem;
+  text-align: center;
+  background-color: #222;
+  border: 1px solid #f00; }
+  .nav__item {
+    padding: 1rem;
+    display: inline;
+    font-size: 2rem;
+    color: #fff; }

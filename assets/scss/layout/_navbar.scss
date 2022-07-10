@@ -1,0 +1,13 @@
+.nav {
+    padding: 2rem;
+    text-align: center;
+    background-color: $black-light;
+    border: 1px solid #f00;
+
+    &__item {
+        padding: 1rem;
+        display: inline;
+        font-size: 2rem;
+        color: $white;
+    }
+}

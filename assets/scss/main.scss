@@ -1,16 +1,9 @@
-* {
-    padding: 0;
-    margin: 0;
-}
+// Include abstract files
+@import './abstract/variables';
 
-html {
-    font-size: 62.5%;
-}
+// Include base files
+@import './base/base';
 
-body {
-    background-color: #000;;
-}
-
-h1 {
-    color: #fff;
-}
+// Include layout files
+@import './layout/header';
+@import './layout/navbar';
