@@ -11,7 +11,13 @@
     <body>
         <header class="header">
             <nav class="nav">
-                <ul>
+                <label class="nav__label" for="open">
+                    <span class="nav__toggle"></span>
+                    <span class="nav__toggle"></span>
+                    <span class="nav__toggle"></span>
+                </label>
+                <input class="nav__input" name="open" id="open" type="checkbox">
+                <ul class="nav__menu">
                     <li class="nav__item">Home</li>
                     <li class="nav__item">Viaggi</li>
                     <li class="nav__item">Eventi</li>
@@ -23,8 +29,7 @@
             </nav>
             <div class="header__container">
                 <div class="header__logo">
-                    <h1 class="header__title">ViaggIn</h1>
-                    <img src="<?= get_template_directory_uri(); ?>/images/viaggin-logo.png" alt="" class="header__logo">
+                    <img class="header__logo" src="<?= get_template_directory_uri(); ?>/images/viaggin-logo.png" alt="Viaggin Logo">
                 </div>
             </div>
         </header>

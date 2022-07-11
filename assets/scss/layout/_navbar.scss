@@ -4,10 +4,43 @@
     background-color: $black-light;
     border: 1px solid #f00;
 
+    &__label {
+        display: none;
+
+        @include respond('lg') {
+            display: block;
+        }
+    }
+
+    &__toggle {
+        display: block;
+        width: 3rem;
+        padding: .2rem;
+        margin: .5rem;
+        background-color: $white;
+    }
+
+    &__input {
+        display: none;
+        &:checked ~ .nav__menu {
+            display: block;
+        }
+    }
+
+    &__menu {
+        @include respond('lg') {
+            display: none;
+        }
+    }
+
     &__item {
         padding: 1rem;
         display: inline;
         font-size: 2rem;
         color: $white;
+
+        @include respond('lg') {
+            display: block;
+        }
     }
 }

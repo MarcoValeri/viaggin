@@ -1,0 +1,17 @@
+.header {
+
+    &__container {
+        width: 60%;
+        margin: 2rem auto;
+        padding: 2rem 0;
+        text-align: center;
+        border: 1px solid #f00;
+        border-bottom: 3px solid $black;
+    }
+
+    &__logo {
+        display: inline-block;
+        width: 40%;
+    }
+
+}
