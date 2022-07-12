@@ -18,13 +18,13 @@
                 </label>
                 <input class="nav__input" name="open" id="open" type="checkbox">
                 <ul class="nav__menu">
-                    <li class="nav__item">Home</li>
-                    <li class="nav__item">Viaggi</li>
-                    <li class="nav__item">Eventi</li>
-                    <li class="nav__item">Documenti</li>
-                    <li class="nav__item">Vivere all'estero</li>
-                    <li class="nav__item">Chi siamo</li>
-                    <li class="nav__item">Contatti</li>
+                    <li class="nav__item"><a class="link-effect-load link-mark" href="#">Home</li>
+                    <li class="nav__item"><a class="link-effect-load" href="#">Viaggi</a></li>
+                    <li class="nav__item"><a class="link-effect-load" href="#">Eventi</a></li>
+                    <li class="nav__item"><a class="link-effect-load" href="#">Documenti</a></li>
+                    <li class="nav__item"><a class="link-effect-load" href="#">Vivere all'estero</a></li>
+                    <li class="nav__item"><a class="link-effect-load" href="#">Chi siamo</a></li>
+                    <li class="nav__item"><a class="link-effect-load" href="#">Contatti</a></li>
                 </ul>
             </nav>
             <div class="header__container">
