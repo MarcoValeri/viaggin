@@ -7,3 +7,25 @@ function viaggin_enqueque_style() {
 }
 
 add_action('wp_enqueue_scripts', 'viaggin_enqueque_style');
+
+/**
+ * Create a function that
+ * @return string current url
+ * e.g. www.viaggin.com/
+ */
+function getPath(): string {
+    global $wp;
+    return home_url($wp->request);
+}
+
+/**
+ * Create a function that gets
+ * @param string $url
+ * and
+ * @return bool true if
+ * the current url === to $url
+ * false otherwise
+ */
+function isThisUr(string $url): bool {
+    return getPath() === $url ? true : false;
+}

@@ -18,8 +18,8 @@
                 </label>
                 <input class="nav__input" name="open" id="open" type="checkbox">
                 <ul class="nav__menu">
-                    <li class="nav__item"><a class="link-effect-load link-mark" href="#">Home</li>
-                    <li class="nav__item"><a class="link-effect-load" href="#">Viaggi</a></li>
+                    <li class="nav__item"><a class="link-effect-load <?= isThisUr('http://localhost/viaggin') ? 'link-mark' : ''; ?>" href="/viaggin">Home</li>
+                    <li class="nav__item"><a class="link-effect-load <?= isThisUr('http://localhost/viaggin/viaggi') ? 'link-mark' : ''; ?>" href="/viaggin/viaggi">Viaggi</a></li>
                     <li class="nav__item"><a class="link-effect-load" href="#">Eventi</a></li>
                     <li class="nav__item"><a class="link-effect-load" href="#">Documenti</a></li>
                     <li class="nav__item"><a class="link-effect-load" href="#">Vivere all'estero</a></li>

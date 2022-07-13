@@ -22,3 +22,25 @@
     }
 
 }
+
+/*
+* Add more height for device with screen
+* height less then 800px
+* like laptop 15.6''
+*/
+@media screen and (max-height: 800px) {
+    .header {
+        height: 50vh;
+    }
+}
+
+/*
+* Add more height for device with screen
+* height less then 700px
+* like iPhone 4 and iPhone SE
+*/
+@media screen and (max-height: 700px) {
+    .header {
+        height: 90vh;
+    }
+}
