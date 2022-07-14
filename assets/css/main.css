@@ -122,3 +122,31 @@ html {
     @media only screen and (max-width: 991px) {
       .nav__item {
         display: block; } }
+
+.home__main {
+  border: 1px solid #f00; }
+
+.home__grid-categories {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-areas: "home__container-viaggi home__container-eventi" "home__container-documenti home__container-estero"; }
+
+.home__container {
+  width: 50rem;
+  border: 1px solid #f00; }
+
+.home .home__container-viaggi {
+  grid-template-areas: home__container-viaggi;
+  border: 1px solid #f00; }
+
+.home .home__container-eventi {
+  grid-template-areas: home__container-eventi;
+  border: 1px solid #f00; }
+
+.home .home__container-documenti {
+  grid-template-areas: home__container-documenti;
+  border: 1px solid #f00; }
+
+.home .home__container-estero {
+  grid-template-areas: home__container-estero;
+  border: 1px solid #f00; }
