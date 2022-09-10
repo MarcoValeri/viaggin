@@ -31,5 +31,10 @@
                 <div class="header__logo">
                     <img class="header__logo" src="<?= get_template_directory_uri(); ?>/images/viaggin-logo.png" alt="Viaggin Logo">
                 </div>
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs__container"><a class="breadcrumbs__item link-no-style body-4" href="/">Home</a></div>
+                </div>
             </div>
         </header>
+        <div class="content">
+            <main class="content__main">

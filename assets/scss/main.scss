@@ -6,8 +6,14 @@
 @import './base/base';
 @import './base/typography';
 
+// Include components files
+@import './components/article-card';
+@import './components/breadcrumbs';
+
 // Include layout files
+@import './layout/content';
 @import './layout/header';
+@import './layout/footer';
 @import './layout/navbar';
 
 // Include page files

@@ -29,3 +29,20 @@ function getPath(): string {
 function isThisUr(string $url): bool {
     return getPath() === $url ? true : false;
 }
+
+/**
+ * Register sidebar
+ */
+function viaggin_widgets_init() {
+
+    register_sidebar([
+        'name'              => esc_html__('Primary Sidebar', 'viaggin'),
+        'id'                => 'main-sidebar',
+        'description'       => esc_html__('Add widgets for main sidebar here', 'viaggin'),
+        'before_widget'     => '<div class="sidebar__container-widget">',
+        'after_widget'      => '</div>'
+    ]);
+
+}
+
+add_action('widgets_init', 'viaggin_widgets_init');

@@ -1,4 +1,127 @@
+// body tags
+.body-1 {
+    font-size: 2.2rem;
+    line-height: 1.6;
+}
+
+.body-2 {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.body-3 {
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.body-4 {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.body-5 {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.body-6 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+// Buttons
+.button {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: $black;
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: 2px solid $black;
+    transition: all .5s;
+    cursor: pointer;
+
+    &--black {
+        color: $white;
+        background-color: $black;
+        border-color: $yellow-logo;
+
+        &:hover {
+            color: $black;
+            background-color: $yellow-logo;
+            border-color: $brown-logo;
+        }
+    }
+
+    &--yellow {
+        background-color: $yellow-logo;
+
+        &:hover {
+            color: $white;
+            background-color: $black;
+            border-color: $yellow-logo;
+        }
+    }
+
+    &--white {
+        background-color: $white;
+
+        &:hover {
+            color: $white;
+            background-color: $black;
+        }
+    }
+}
+
+// H tags
+.h1 {
+    font-size: 7rem;
+
+    @include respond(sm) {
+        font-size: 5rem;
+    }
+}
+
+.h2 {
+    font-size: 5rem;
+
+    @include respond(sm) {
+        font-size: 4rem;
+    }
+}
+
+.h3 {
+    font-size: 3rem;
+}
+
+.h4 {
+    font-size: 2.5rem;
+}
+
 // Link
+.link {
+    text-decoration: none;
+    color: $red-link;
+    cursor: pointer;
+
+    &:hover {
+        color: $black;
+    }
+}
+
+.link-no-style {
+    text-decoration: none;
+    color: $black;
+}
+
+.link-no-style--white {
+    color: $white;
+}
+
+.list-no-style__inherit-color {
+    text-decoration: none;
+    color: inherit;
+}
+
 .link-effect-load {
     display: inline-block;
     position: relative;
@@ -41,4 +164,16 @@
         transition: transform 0.25s ease-out;
     }
 
+}
+
+// List
+// ul and ol with no style
+.list-no-style {
+    list-style: none;
+    margin-left: 0 !important;
+}
+
+// li without padding-left
+.list-no-style__item {
+    padding-left: 0 !important;
 }
