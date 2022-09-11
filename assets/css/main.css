@@ -370,8 +370,8 @@ html {
 
 .article__form-comments-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "article__form-comments-name article__form-comments-email" "article__form-comments-comment article__form-comments-comment" "article__form-comments-privacy article__form-comments-privacy" "article__form-comments-submit article__form-comments-submit";
+  grid-template-columns: 1fr;
+  grid-template-areas: "article__form-comments-user" "article__form-comments-name" "article__form-comments-email" "article__form-comments-comment" "article__form-comments-privacy" "article__form-comments-submit" "article__form-comments-button";
   /**
         * Nested errors and
         * inputs rules
@@ -379,10 +379,6 @@ html {
         * outside of article class
         * on Twig file
         */ }
-  @media only screen and (max-width: 767px) {
-    .article__form-comments-grid {
-      grid-template-columns: 1fr;
-      grid-template-areas: "article__form-comments-name" "article__form-comments-email" "article__form-comments-comment" "article__form-comments-privacy" "article__form-comments-submit"; } }
   .article__form-comments-grid div ul {
     list-style: none; }
   .article__form-comments-grid div ul li {
@@ -436,6 +432,10 @@ html {
       .article__form-comments-grid textarea {
         width: 60%; } }
 
+.article__form-comments-user {
+  grid-area: article__form-comments-user;
+  margin-bottom: 2rem; }
+
 .article__form-comments-name {
   grid-area: article__form-comments-name; }
 
@@ -446,10 +446,15 @@ html {
   grid-area: article__form-comments-comment; }
 
 .article__form-comments-privacy {
-  grid-area: article__form-comments-privacy; }
+  grid-area: article__form-comments-privacy;
+  margin-bottom: 2rem; }
 
 .article__form-comments-submit {
-  grid-area: article__form-comments-submit; }
+  grid-area: article__form-comments-submit;
+  margin-bottom: 2rem; }
+
+.article__form-comments-button {
+  grid-area: article__form-comments-button; }
 
 .article__form-button {
   margin: 2rem 0; }

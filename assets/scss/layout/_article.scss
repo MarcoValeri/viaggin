@@ -189,22 +189,15 @@
 
     &__form-comments-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        "article__form-comments-name article__form-comments-email"
-        "article__form-comments-comment article__form-comments-comment"
-        "article__form-comments-privacy article__form-comments-privacy"
-        "article__form-comments-submit article__form-comments-submit";
-
-        @include respond(md) {
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "article__form-comments-name"
-            "article__form-comments-email"
-            "article__form-comments-comment"
-            "article__form-comments-privacy"
-            "article__form-comments-submit";
-        }
+        "article__form-comments-user"
+        "article__form-comments-name"
+        "article__form-comments-email"
+        "article__form-comments-comment"
+        "article__form-comments-privacy"
+        "article__form-comments-submit"
+        "article__form-comments-button";
 
         /**
         * Nested errors and
@@ -282,6 +275,11 @@
         }
     }
 
+    &__form-comments-user {
+        grid-area: article__form-comments-user;
+        margin-bottom: 2rem;
+    }
+
     &__form-comments-name {
         grid-area: article__form-comments-name;
     }
@@ -296,10 +294,16 @@
 
     &__form-comments-privacy {
         grid-area: article__form-comments-privacy;
+        margin-bottom: 2rem;
     }
 
     &__form-comments-submit {
         grid-area: article__form-comments-submit;
+        margin-bottom: 2rem;
+    }
+
+    &__form-comments-button {
+        grid-area: article__form-comments-button;
     }
 
     &__form-button {
