@@ -1,5 +1,8 @@
 <?php
 
+// Add theme support
+add_theme_support('post-thumbnails', ['post', 'page']);
+
 // Load main CSS file
 function viaggin_enqueque_style() {
     wp_enqueue_style('style-css', get_stylesheet_directory_uri() . '/style.css', [], time(), 'all');

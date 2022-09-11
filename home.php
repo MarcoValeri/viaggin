@@ -47,7 +47,9 @@
             $lastPostTitle = get_the_title();
             $lastPostDate = get_the_date();
             $lastPostAuthor = get_the_author();
-            $lastPOstImage = get_the_post_thumbnail();
+            $lastPostImageUrl = get_the_post_thumbnail_url();
+            $lastPostImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
+            $lastPostCommentsNumb = get_comments(['count' => true]);
             $lastPostContent = get_the_content();
     ?>
         <div class="article-card">
@@ -56,11 +58,11 @@
                     <h2 class="h3"><?= $lastPostTitle; ?></h2>
                 </div>
                 <div class="article-card__container-data">
-                    <span class="article-card__data body-6">Pubblicato il <?= $lastPostDate; ?> - <?= $lastPostAuthor; ?> - {{article.getComments|length}} {{ (article.getComments|length == 1) ? 'commento' : 'commenti' }}</span>
+                    <span class="article-card__data body-6">Pubblicato il <?= $lastPostDate; ?> - <?= $lastPostAuthor; ?> - <?= $lastPostCommentsNumb == 1 ? $lastPostCommentsNumb . ' commento' : $lastPostCommentsNumb . ' commenti'; ?></span>
                 </div>
                 <div class="article-card__container-content">
                     <div class="article-card__paragraph body-2">
-                        <img class="article-card__img" src="../images/<?= $lastPOstImage; ?>" alt="">
+                        <img class="article-card__img" src="<?= $lastPostImageUrl; ?>" alt="<?= $lastPostImageAlt; ?>">
                         <?= $lastPostContent; ?>
                     </div>
                 </div>
