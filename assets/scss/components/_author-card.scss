@@ -1,0 +1,39 @@
+.author-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 25rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid $grey-light;
+
+    @include respond(xxl) {
+        height: 30rem;
+    }
+
+    @include respond(xl) {
+        height: 35rem;
+    }
+
+    @include respond(md) {
+        height: auto;
+        margin: 5rem auto;
+    }
+
+    &__container-title {
+        margin-bottom: 1rem;
+    }
+
+    &__container-content {
+        margin-bottom: 1rem;
+    }
+
+    &__img {
+        width: 15rem;
+        float: left;
+        margin: 0 1rem .5rem 0;
+    }
+
+}
