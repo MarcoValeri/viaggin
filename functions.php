@@ -49,3 +49,47 @@ function viaggin_widgets_init() {
 }
 
 add_action('widgets_init', 'viaggin_widgets_init');
+
+/**
+ * Create a function that gets
+ * @param string $authorEmail
+ * and
+ * @return string url authr image
+ */
+function getAuthorImage($authorEmail): string {
+    
+    $authorImage = 'http://localhost/viaggin/wp-content/uploads/viaggin-logo.png';
+
+    switch ($authorEmail) {
+        case 'info@marcovaleri.net':
+            $authorImage = 'http://localhost/viaggin/wp-content/uploads/marco-valeri.jpeg';
+            break;
+        
+        case 'marcovaleri@hotmail.it':
+            $authorImage = 'http://localhost/viaggin/wp-content/uploads/marco-valeri.jpeg';
+            break;
+
+        case 'emanuelciuro@viaggin.com':
+            $authorImage = 'http://localhost/viaggin/wp-content/uploads/emanuelciuro.jpg';
+            break;
+
+        case 'caterinagiordo@viaggin.com':
+            $authorImage = 'http://localhost/viaggin/wp-content/uploads/caterinagiordo.png';
+            break;
+
+        case 'ariannacapogrossi@viaggin.com':
+            $authorImage = 'http://localhost/viaggin/wp-content/uploads/ariannacapogrossi.jpg';
+            break;
+
+        case 'alessandracaputo@viaggin.com':
+            $authorImage = 'http://localhost/viaggin/wp-content/uploads/alessandracaputo.jpeg';
+            break;
+
+        default:
+            $authorImage = 'http://localhost/viaggin/wp-content/uploads/viaggin-logo.png';
+            break;
+    }
+
+    return $authorImage;
+
+}

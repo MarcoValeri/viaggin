@@ -12,6 +12,7 @@ if (have_posts()) {
         $postAuthorName = get_the_author_meta('first_name');
         $postAuthroSurname = get_the_author_meta('last_name');
         $postAuthroUrl = get_author_posts_url($postID);
+        $postAuthorEmail = get_the_author_meta('user_email');
         $postDate = get_the_date('d-m-Y');
         $postUpdateDate = get_the_modified_date('d-m-Y');
         $postCommentsNum = get_comments_number();
@@ -19,12 +20,7 @@ if (have_posts()) {
         $postCategoryName = get_cat_name($postID);
         $postCategoryUrl = get_category_link($postID);
         $postTags = get_the_tags();
-
-        var_dump($postAuthroUrl);
 ?>
-        <pre>
-            <?php print_r($postTags); ?>
-        </pre>
         <article class="article">
             <h1 class="article__title h1"><?= $postTitle; ?></h1>
             <ul class="article__data">
@@ -63,7 +59,7 @@ if (have_posts()) {
                     </div>
                     <div class="author-card__container-content">
                         <p class="author-card__paragraph body-2">
-                            <img class="author-card__img" src="../images/{{ articleAuthorImage }}" alt="Immagine dell'autorə {{ articleAuthor }}">
+                            <img class="author-card__img" src="<?= getAuthorImage($postAuthorEmail); ?>" alt="Immagine dell'autorə <?= $postAuthorName . ' ' . $postAuthroSurname; ?>">
                             Mi chiamo Marco Valeri, sono nato a Roma e attualmente vivo a Londra, città che mi ha cambiato la vita.
                             Laureato in Computer Science alla Birkbeck University of London, divoro libri, amo scrivere e non mi stanco mai di conoscere cose nuove, soprattutto legate alla comunicazione, alla crescita personale e allo sviluppo del web.
                             Ho fatto praticamente ogni tipo di lavoro per mantenermi e questo mi ha permesso di capire che l’età non è mai un limite per essere ciò che vuoi essere.

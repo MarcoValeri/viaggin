@@ -30,14 +30,14 @@
         <h2 class="h2">Ultimi Articoli</h2>
     </div>
     <?php
-    $args = [
+    $argsPost = [
         'post_type'             => 'post',
         'posts_per_page'        => 10,
         'order'                 => 'DESC',
         'post_status'           => 'publish'
     ];
 
-    $lastPostsQuery = new WP_Query($args);
+    $lastPostsQuery = new WP_Query($argsPost);
 
     if ($lastPostsQuery->have_posts()) {
         while ($lastPostsQuery->have_posts()) {
@@ -63,7 +63,10 @@
                 <div class="article-card__container-content">
                     <div class="article-card__paragraph body-2">
                         <img class="article-card__img" src="<?= $lastPostImageUrl; ?>" alt="<?= $lastPostImageAlt; ?>">
-                        <?= $lastPostContent; ?>
+                        <?php
+                        $lastPostExcerpt = substr($lastPostContent, 0, 400);
+                        echo $lastPostExcerpt;
+                        ?>
                     </div>
                 </div>
             </a>
