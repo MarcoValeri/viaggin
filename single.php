@@ -70,29 +70,12 @@ if (have_posts()) {
                 </a>
             </div>
         </section>
-        <section id="article-container-comments" class="article__container-comments-form">
-            <h3 class="article__comments-sub-title h3">Lascia un commento</h3>
-            <?php
-            $userEmailLogged = wp_get_current_user()->user_email;
-            $argsComment = [
-                'fields' => [
-                    'author'    => '<div class="article__form-comments-name article__input"><input type="text" id="author" name="author" placeholder="Nome *" /></div>',
-                    'email'     => '<div class="article__form-comments-email article__input"><input type="email" id="email" name="email" placeholder="Email *" /></div>',
-                    'cookies'   => '<div class="article__form-comments-privacy article__input"><input type="checkbox" id="Privacy" name="Privacy" required="required" value="1"><label class="contact__privacy-label body-3 required" for="Privacy">Accetto la privacy policy</label></div><div class="article__form-comments-submit article__input"><p class="body-3">Per maggiori informazioni consulta la <a href="#">Privacy Policy di ViaggIn</a></p></div>'
-                ],
-                'submit_button'             => '<div class="article__form-comments-button"><input class="button button--black" type="submit" name="submit" value="Invia" /></div>',
-                'title_reply'               => __('*** La tua email non verrà pubblicata ***'),
-                'title_reply_to'            => __('Rispondi'),
-                'comment_field'             => '<div class="article__form-comments-comment article__input"><textarea id="comment" name="comment" placeholder="Commento *"></textarea></div>',
-                'logged_in_as'              => '<div class="article__form-comments-user article__input"><p class="body-2">Sei registrato come ' . $userEmailLogged . '</p></div>',
-                'comment_notes_before'      => __(''),
-                'comment_notes_after'       => '',
-                'id_submit'                 => __('comment-submit'),
-                'class_form'                => 'article__form-comments-grid'
-            ];
-            ?>
-            <?php comment_form($argsComment); ?>
-        </section>
+        <?php
+        // Show comments form and comments if they are available
+        if (comments_open()) {
+            comments_template();
+        }
+        ?>
 <?php
     }
 }
