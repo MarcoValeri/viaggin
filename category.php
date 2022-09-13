@@ -1,1 +1,0 @@
-<h1>category.php</h1>
