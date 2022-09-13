@@ -10,6 +10,17 @@ $commentsNum = get_comments_number();
     <h3 class="article__comments-sub-title h3">Lascia un commento</h3>
     <?php
     /**
+     * Show successfull message if the comment has been sent
+     */
+    if (count($_GET) > 0) {
+        if ($_GET['unapproved']) {
+            echo '<div class="article__container-comments-success"><p class="article__comments-success body-2">Commento inviato ed in fase di approvazione</p></div>';
+        } 
+    }
+    
+    ?>
+    <?php
+    /**
      * Set up comments form
      * and print it out
      */
@@ -29,7 +40,7 @@ $commentsNum = get_comments_number();
         'comment_notes_after'       => '',
         'id_submit'                 => __('comment-submit'),
         'class_form'                => 'article__form-comments-grid',
-        // 'action'                    => '#article-container-comments'
+        // 'action'                    => 'wp-comments-post.php#article-container-comments'
     ];
     ?>
     <?php comment_form($argsComment); ?>

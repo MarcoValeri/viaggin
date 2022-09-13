@@ -382,7 +382,8 @@ html {
 .article__container-comments-success {
   padding: 1rem;
   border: 2px solid #0c8346;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-bottom: 2rem; }
 
 .article__comments-success {
   color: #0c8346;
