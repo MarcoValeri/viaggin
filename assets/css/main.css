@@ -224,20 +224,20 @@ html {
   justify-content: center;
   flex-direction: column;
   width: 90%;
-  height: 25rem;
+  height: auto;
+  min-height: 25rem;
   margin: 2rem auto;
   padding: 1rem;
   border-radius: 5px;
   border: 1px solid #a39a9a; }
   @media only screen and (max-width: 1499px) {
     .comment-card {
-      height: 30rem; } }
+      min-height: 30rem; } }
   @media only screen and (max-width: 1199px) {
     .comment-card {
-      height: 35rem; } }
+      min-height: 35rem; } }
   @media only screen and (max-width: 767px) {
     .comment-card {
-      height: auto;
       margin: 5rem auto; } }
   .comment-card__container-title {
     margin-bottom: 1rem; }

@@ -40,7 +40,6 @@ $commentsNum = get_comments_number();
         'comment_notes_after'       => '',
         'id_submit'                 => __('comment-submit'),
         'class_form'                => 'article__form-comments-grid',
-        // 'action'                    => 'wp-comments-post.php#article-container-comments'
     ];
     ?>
     <?php comment_form($argsComment); ?>

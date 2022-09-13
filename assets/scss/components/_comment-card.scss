@@ -3,22 +3,22 @@
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    height: 25rem;
+    height: auto;
+    min-height: 25rem;
     margin: 2rem auto;
     padding: 1rem;
     border-radius: 5px;
     border: 1px solid $grey-light;
 
     @include respond(xxl) {
-        height: 30rem;
+        min-height: 30rem;
     }
 
     @include respond(xl) {
-        height: 35rem;
+        min-height: 35rem;
     }
 
     @include respond(md) {
-        height: auto;
         margin: 5rem auto;
     }
 
