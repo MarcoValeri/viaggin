@@ -295,6 +295,10 @@
     &__form-comments-privacy {
         grid-area: article__form-comments-privacy;
         margin-bottom: 2rem;
+
+        .contact__privacy-label {
+            cursor: pointer;
+        }
     }
 
     &__form-comments-submit {

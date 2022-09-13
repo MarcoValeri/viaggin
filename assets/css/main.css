@@ -475,6 +475,8 @@ html {
 .article__form-comments-privacy {
   grid-area: article__form-comments-privacy;
   margin-bottom: 2rem; }
+  .article__form-comments-privacy .contact__privacy-label {
+    cursor: pointer; }
 
 .article__form-comments-submit {
   grid-area: article__form-comments-submit;

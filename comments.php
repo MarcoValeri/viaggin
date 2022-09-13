@@ -1,4 +1,8 @@
 <?php
+/**
+ * This files is styled on comments.php
+ */
+
 $commentsNum = get_comments_number();
 ?>
 
@@ -25,7 +29,7 @@ $commentsNum = get_comments_number();
         'comment_notes_after'       => '',
         'id_submit'                 => __('comment-submit'),
         'class_form'                => 'article__form-comments-grid',
-        'action'                    => '#article-container-comments'
+        // 'action'                    => '#article-container-comments'
     ];
     ?>
     <?php comment_form($argsComment); ?>
