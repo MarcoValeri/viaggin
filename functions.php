@@ -29,7 +29,7 @@ function getPath(): string {
  * the current url === to $url
  * false otherwise
  */
-function isThisUr(string $url): bool {
+function isThisUrl(string $url): bool {
     return getPath() === $url ? true : false;
 }
 
