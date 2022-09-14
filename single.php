@@ -17,7 +17,7 @@ if (have_posts()) {
         $postUpdateDate = get_the_modified_date('d-m-Y');
         $postCommentsNum = get_comments_number();
         $postContent = get_the_content();
-        $postCategoryName = get_cat_name($postID);
+        $postCategoryName = get_the_category($postID)[0]->name;
         $postCategoryUrl = get_category_link($postID);
         $postTags = get_the_tags();
 ?>
@@ -38,12 +38,16 @@ if (have_posts()) {
                         <span class="body-4">Categoria:</span> <a href="<?= $postCategoryUrl; ?>" class="link body-4"><?= $postCategoryName; ?></a>
                     </li>
                     <li class="list-no-style__item">
-                        <?= count($postTags) === 1 ? '<span class="body-4">Tag:</span>' : '<span class="body-4">Tags:</span>'; ?>
-                        <?php
-                        foreach ($postTags as $key => $postTag) {
+                        <?php 
+                        if ($postTags) {
+                            echo count($postTags) === 1 ? '<span class="body-4">Tag:</span>' : '<span class="body-4">Tags:</span>';
                         ?>
-                            <a class="link body-4" href="<?= $postTag->slug; ?>"><?= $postTag->name; ?></a><?= count($postTags) === ($key + 1) ? '' : ','; ?>
                         <?php
+                            foreach ($postTags as $key => $postTag) {
+                        ?>
+                                <a class="link body-4" href="<?= $postTag->slug; ?>"><?= $postTag->name; ?></a><?= count($postTags) === ($key + 1) ? '' : ','; ?>
+                        <?php
+                            }
                         }
                         ?>
                     </li>

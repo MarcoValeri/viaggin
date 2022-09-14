@@ -5,7 +5,7 @@
     <div class="category__container-categories">
         <div class="category__container-category">
             <h2 class="category__category-title h2">Vivere all'estero</h2>
-            <p class="category__category-description body-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, exercitationem esse? Repudiandae similique, dignissimos consectetur maxime explicabo exercitationem ipsam mollitia! Quae necessitatibus ratione iure minus quam dolorum non amet praesentium!</p>
+            <p class="category__category-description body-2">Vivere all'estero: guide pratiche, accurate e aggiornate per trasferisi a vivere all'estero</p>
         </div>
     </div>
 </section>

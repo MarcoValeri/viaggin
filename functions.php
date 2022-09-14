@@ -93,3 +93,48 @@ function getAuthorImage($authorEmail): string {
     return $authorImage;
 
 }
+
+/**
+ * Create a function that determines the breadcrmbs
+ */
+function showBreadcrumbs(): string {
+
+    $getPostCategory = get_the_category();
+    $breadcrumb = '';
+
+    if (isThisUrl('http://localhost/viaggin')) {
+        $breadcrumb = '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin">Home</a>';
+    } else if (isThisUrl('http://localhost/viaggin/category/viaggi')) {
+        $breadcrumb = '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin">Home</a>';
+        $breadcrumb .= '<span class="breadcrumbs__item-span"> / </span>';
+        $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin/category/viaggi/">Categoria Viaggi</a>';
+    } else if (isThisUrl('http://localhost/viaggin/category/eventi')) {
+        $breadcrumb = '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin">Home</a>';
+        $breadcrumb .= '<span class="breadcrumbs__item-span"> / </span>';
+        $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin/category/eventi/">Categoria Eventi</a>';
+    } else if (isThisUrl('http://localhost/viaggin/category/documenti')) {
+        $breadcrumb = '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin">Home</a>';
+        $breadcrumb .= '<span class="breadcrumbs__item-span"> / </span>';
+        $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin/category/documenti/">Categoria Documenti</a>';
+    } else if (isThisUrl('http://localhost/viaggin/category/vivere-estero')) {
+        $breadcrumb = '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin">Home</a>';
+        $breadcrumb .= '<span class="breadcrumbs__item-span"> / </span>';
+        $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin/category/vivere-estero/">Categoria Vivere all\'Estero</a>';
+    } else if (isThisUrl('http://localhost/viaggin/chi-siamo')) {
+        $breadcrumb = '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin">Home</a>';
+        $breadcrumb .= '<span class="breadcrumbs__item-span"> / </span>';
+        $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin/chi-siamo">Chi Siamo</a>';
+    } else if (isThisUrl('http://localhost/viaggin/contatti')) {
+        $breadcrumb = '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin">Home</a>';
+        $breadcrumb .= '<span class="breadcrumbs__item-span"> / </span>';
+        $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin/contatti">Contatti</a>';
+    } else if (is_single()) {
+        $breadcrumb = '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin">Home</a>';
+        $breadcrumb .= '<span class="breadcrumbs__item-span"> / </span>';
+        $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin/category/' .  $getPostCategory[0]->slug . '">' . $getPostCategory[0]->name . '</a>';
+        $breadcrumb .= '<span class="breadcrumbs__item-span"> / </span>';
+        $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin/category/' .  get_post_permalink() . '">' . get_the_title() . '</a>';
+    }
+
+    return $breadcrumb;
+}

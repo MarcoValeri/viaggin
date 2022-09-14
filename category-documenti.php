@@ -5,7 +5,7 @@
     <div class="category__container-categories">
         <div class="category__container-category category__container-category--red">
             <h2 class="category__category-title h2">Documenti di Viaggio</h2>
-            <p class="category__category-description body-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, exercitationem esse? Repudiandae similique, dignissimos consectetur maxime explicabo exercitationem ipsam mollitia! Quae necessitatibus ratione iure minus quam dolorum non amet praesentium!</p>
+            <p class="category__category-description body-2">Documenti di viaggio di <em>ViaggIn</em>: guide per viaggiare informati</p>
         </div>
     </div>
 </section>
