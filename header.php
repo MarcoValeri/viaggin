@@ -23,8 +23,8 @@
                     <li class="nav__item"><a class="link-effect-load <?= isThisUr('http://localhost/viaggin/category/eventi/') ? 'link-mark' : ''; ?>" href="http://localhost/viaggin/category/eventi/">Eventi</a></li>
                     <li class="nav__item"><a class="link-effect-load <?= isThisUr('http://localhost/viaggin/category/documenti/') ? 'link-mark' : ''; ?>" href="http://localhost/viaggin/category/documenti/">Documenti</a></li>
                     <li class="nav__item"><a class="link-effect-load <?= isThisUr('http://localhost/viaggin/category/vivere-estero/') ? 'link-mark' : ''; ?>" href="http://localhost/viaggin/category/vivere-estero/">Vivere all'estero</a></li>
-                    <li class="nav__item"><a class="link-effect-load" href="#">Chi siamo</a></li>
-                    <li class="nav__item"><a class="link-effect-load" href="#">Contatti</a></li>
+                    <li class="nav__item"><a class="link-effect-load <?= isThisUr('http://localhost/viaggin/chi-siamo/') ? 'link-mark' : ''; ?>" href="http://localhost/viaggin/chi-siamo/">Chi siamo</a></li>
+                    <li class="nav__item"><a class="link-effect-load <?= isThisUr('http://localhost/viaggin/contatti/') ? 'link-mark' : ''; ?>" href="http://localhost/viaggin/contatti/">Contatti</a></li>
                 </ul>
             </nav>
             <div class="header__container">
