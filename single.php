@@ -7,11 +7,12 @@ if (have_posts()) {
         the_post();
 
         $postID = get_the_ID();
+        $authorID = get_the_author_meta('ID');
         $postTitle = get_the_title();
         $postAuthor = get_the_author();
         $postAuthorName = get_the_author_meta('first_name');
         $postAuthroSurname = get_the_author_meta('last_name');
-        $postAuthroUrl = get_author_posts_url($postID);
+        $postAuthroUrl = get_author_posts_url($authorID);
         $postAuthorEmail = get_the_author_meta('user_email');
         $postDate = get_the_date('d-m-Y');
         $postUpdateDate = get_the_modified_date('d-m-Y');
@@ -45,7 +46,7 @@ if (have_posts()) {
                         <?php
                             foreach ($postTags as $key => $postTag) {
                         ?>
-                                <a class="link body-4" href="<?= $postTag->slug; ?>"><?= $postTag->name; ?></a><?= count($postTags) === ($key + 1) ? '' : ','; ?>
+                                <a class="link body-4" href="http://localhost/viaggin/tag/<?= $postTag->slug; ?>"><?= $postTag->name; ?></a><?= count($postTags) === ($key + 1) ? '' : ','; ?>
                         <?php
                             }
                         }

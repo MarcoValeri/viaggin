@@ -735,8 +735,10 @@ html {
   margin: 5rem auto; }
 
 .author__container-articles {
-  text-align: center;
   margin: 5rem auto; }
+
+.author__container-title {
+  text-align: center; }
 
 .home__container-categories {
   display: flex;

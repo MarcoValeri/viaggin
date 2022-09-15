@@ -74,8 +74,6 @@ $authorDescription = get_the_author_meta('description');
         <?php
             }
         }
-
-
         ?>
     </div>
 </section>
