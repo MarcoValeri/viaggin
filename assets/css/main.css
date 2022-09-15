@@ -730,6 +730,14 @@ html {
       .nav__item {
         display: block; } }
 
+.author__container-all-authors {
+  text-align: center;
+  margin: 5rem auto; }
+
+.author__container-articles {
+  text-align: center;
+  margin: 5rem auto; }
+
 .home__container-categories {
   display: flex;
   align-items: center;

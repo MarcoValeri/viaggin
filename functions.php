@@ -100,6 +100,8 @@ function getAuthorImage($authorEmail): string {
 function showBreadcrumbs(): string {
 
     $getPostCategory = get_the_category();
+    $getAuthorUrl = get_the_author_meta('user_url');
+    $getAuthorName = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
     $breadcrumb = '';
 
     if (isThisUrl('http://localhost/viaggin')) {
@@ -134,6 +136,10 @@ function showBreadcrumbs(): string {
         $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin/category/' .  $getPostCategory[0]->slug . '">' . $getPostCategory[0]->name . '</a>';
         $breadcrumb .= '<span class="breadcrumbs__item-span"> / </span>';
         $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin/category/' .  get_post_permalink() . '">' . get_the_title() . '</a>';
+    } else if (is_author()) {
+        $breadcrumb = '<a class="breadcrumbs__item link-no-style body-4" href="/viaggin">Home</a>';
+        $breadcrumb .= '<span class="breadcrumbs__item-span"> / </span>';
+        $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="' . $getAuthorUrl . '">Autore ' . $getAuthorName . '</a>';
     }
 
     return $breadcrumb;
