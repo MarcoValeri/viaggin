@@ -3,10 +3,12 @@
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    height: 25rem;
+    // height: 25rem;
+    height: auto;
     margin: 2rem auto;
     padding: 1rem;
     transition: transform .8s;
+    overflow: hidden;
     border-radius: 5px;
     border: 1px solid $grey-light;
 

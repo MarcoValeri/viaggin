@@ -47,7 +47,8 @@
                     <img class="article-card__img" src="<?= $eventiPostImageUrl; ?>" alt="<?= $eventiPostImageAlt; ?>">
                     <?php
                     $eventiPostExcerpt = substr($eventiPostContent, 0, 400);
-                    echo $eventiPostExcerpt;
+                    $eventiPostExcerptNoHtml = strip_tags($eventiPostExcerpt);
+                    echo $eventiPostExcerptNoHtml;
                     ?>
                 </div>
             </div>

@@ -47,6 +47,7 @@
                     <img class="article-card__img" src="<?= $documentiPostImageUrl; ?>" alt="<?= $documentiPostImageAlt; ?>">
                     <?php
                     $documentiPostExcerpt = substr($documentiPostContent, 0, 400);
+                    $documentiPostExcerpt = strip_tags($documentiPostExcerpt);
                     echo $documentiPostExcerpt;
                     ?>
                 </div>

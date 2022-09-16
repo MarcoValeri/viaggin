@@ -47,7 +47,8 @@
                     <img class="article-card__img" src="<?= $viaggiPostImageUrl; ?>" alt="<?= $viaggiPostImageAlt; ?>">
                     <?php
                     $viaggiPostExcerpt = substr($viaggiPostContent, 0, 400);
-                    echo $viaggiPostExcerpt;
+                    $viaggiPostExcerptNoHtml = strip_tags($viaggiPostExcerpt);
+                    echo $viaggiPostExcerptNoHtml;
                     ?>
                 </div>
             </div>

@@ -76,16 +76,24 @@
 .h1 {
     font-size: 7rem;
 
-    @include respond(sm) {
+    @include respond(md) {
         font-size: 5rem;
+    }
+
+    @include respond(sm) {
+        font-size: 3rem;
     }
 }
 
 .h2 {
     font-size: 5rem;
 
-    @include respond(sm) {
+    @include respond(md) {
         font-size: 4rem;
+    }
+
+    @include respond(sm) {
+        font-size: 2rem;
     }
 }
 

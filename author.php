@@ -62,7 +62,8 @@ $authorDescription = get_the_author_meta('description');
                             <img class="article-card__img" src="<?= $authorPosImageUrl; ?>" alt="<?= $authorPosImageAlt; ?>">
                             <?php
                             $authorPosExcerpt = substr($authorPosContent, 0, 400);
-                            echo $authorPosExcerpt;
+                            $authorPosExcerptNoHtml = strip_tags($authorPosExcerpt);
+                            echo $authorPosExcerptNoHtml;
                             ?>
                         </div>
                     </div>
