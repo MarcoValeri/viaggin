@@ -62,7 +62,7 @@
                 </div>
                 <div class="article-card__container-content">
                     <div class="article-card__paragraph body-2">
-                        <img class="article-card__img" src="<?= $lastPostImageUrl; ?>" alt="<?= $lastPostImageAlt; ?>">
+                        <img class="article-card__img" src="<?= $lastPostImageUrl; ?>" alt="<?= $lastPostImageAlt; ?>" width="" height="">
                         <?php
                         $lastPostExcerpt = substr($lastPostContent, 0, 400);
                         echo $lastPostExcerpt;

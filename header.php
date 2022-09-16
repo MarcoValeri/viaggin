@@ -18,7 +18,7 @@
                 </label>
                 <input class="nav__input" name="open" id="open" type="checkbox">
                 <ul class="nav__menu">
-                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('')) ? 'link-mark' : ''; ?>" href="<?= createLink('/') ?>">Home</li>
+                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('')) ? 'link-mark' : ''; ?>" href="<?= createLink('/') ?>" aria-label="Homepage">Home</li>
                     <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/viaggi')) ? 'link-mark' : ''; ?>" href="<?= createLink('/category/viaggi/'); ?>">Viaggi</a></li>
                     <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/eventi')) ? 'link-mark' : ''; ?>" href="<?= createLink('/category/eventi/'); ?>">Eventi</a></li>
                     <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/documenti')) ? 'link-mark' : ''; ?>" href="<?= createLink('/category/documenti/'); ?>">Documenti</a></li>
@@ -29,7 +29,7 @@
             </nav>
             <div class="header__container">
                 <div class="header__logo">
-                    <img class="header__logo" src="<?= get_template_directory_uri(); ?>/images/viaggin-logo.png" alt="Viaggin Logo">
+                    <img class="header__logo" src="<?= get_template_directory_uri(); ?>/images/viaggin-logo.png" alt="Viaggin Logo" width="" height="">
                 </div>
                 <div class="breadcrumbs">
                     <div class="breadcrumbs__container">

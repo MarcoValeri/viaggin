@@ -1,9 +1,15 @@
 .breadcrumbs {
+
+    @include respond(sm) {
+        margin-top: 1rem;
+    }
+
     width: 90%;
     text-align: left;
 
     &__item {
-        color: $grey-light;
+        color: $black;
+        font-weight: 600;
     }
 
     &__item-span {

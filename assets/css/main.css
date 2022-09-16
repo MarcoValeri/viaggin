@@ -176,7 +176,8 @@ html {
   .article-card__container-data {
     margin-bottom: 1rem; }
   .article-card__data {
-    color: #a39a9a; }
+    color: #000;
+    font-weight: 600; }
   .article-card__img {
     width: 15rem;
     float: left;
@@ -214,8 +215,12 @@ html {
 .breadcrumbs {
   width: 90%;
   text-align: left; }
+  @media only screen and (max-width: 575px) {
+    .breadcrumbs {
+      margin-top: 1rem; } }
   .breadcrumbs__item {
-    color: #a39a9a; }
+    color: #000;
+    font-weight: 600; }
   .breadcrumbs__item-span {
     font-size: 2rem; }
 
@@ -284,6 +289,13 @@ html {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 2rem; }
+
+.article a {
+  text-decoration: none;
+  color: #ff785a;
+  cursor: pointer; }
+  .article a:hover {
+    color: #000; }
 
 .article__title {
   margin-bottom: 2rem; }

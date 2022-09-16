@@ -6,12 +6,12 @@
         <ul class="content__sidebar-menu">
             <li class="content__sidebar-menu-item">
                 <a class="link-no-style" href="https://www.facebook.com/viaggin/" target="_blank">
-                    <img class="content__sidebar-social-icon" src="<?= get_template_directory_uri(); ?>/images/facebook-logo.png" alt="Facebook Icon">
+                    <img class="content__sidebar-social-icon" src="<?= get_template_directory_uri(); ?>/images/facebook-logo.png" alt="Facebook Icon" width="" height="">
                 </a>
             </li>
             <li class="content__sidebar-menu-item">
                 <a class="link-no-style" href="https://www.instagram.com/viaggin_official/" target="_blank">
-                    <img class="content__sidebar-social-icon" src="<?= get_template_directory_uri(); ?>/images/instagram-logo.png" alt="Instagram Icon">
+                    <img class="content__sidebar-social-icon" src="<?= get_template_directory_uri(); ?>/images/instagram-logo.png" alt="Instagram Icon" width="" height="">
                 </a>
             </li>
         </ul>
@@ -22,22 +22,22 @@
         </div>
         <ul class="content__sidebar-menu-list">
             <li class="content__sidebar-menu-item-list">
-                <a class="link body-2" href="<?= createLink('/category/viaggi/'); ?>">
+                <a class="link body-2" href="<?= createLink('/category/viaggi/'); ?>" aria-label="Vai alla categoria Viaggi">
                     Viaggi
                 </a>
             </li>
             <li class="content__sidebar-menu-item-list">
-                <a class="link body-2" href="<?= createLink('/category/eventi/'); ?>">
+                <a class="link body-2" href="<?= createLink('/category/eventi/'); ?>" aria-label="Vai alla categoria Eventi">
                     Eventi
                 </a>
             </li>
             <li class="content__sidebar-menu-item-list">
-                <a class="link body-2" href="<?= createLink('/category/documenti/"'); ?>">
+                <a class="link body-2" href="<?= createLink('/category/documenti/"'); ?>" aria-label="Vai alla categoria Documenti">
                     Documenti di viaggio
                 </a>
             </li>
             <li class="content__sidebar-menu-item-list">
-                <a class="link body-2" href="<?= createLink('/category/vivere-estero/'); ?>">
+                <a class="link body-2" href="<?= createLink('/category/vivere-estero/'); ?>" aria-label="Vai alla categoria Vivere all'estero">
                     Vivere all'estero
                 </a>
             </li>

@@ -46,6 +46,16 @@
         margin-bottom: 2rem;
     }
 
+    a {
+        text-decoration: none;
+        color: $red-link;
+        cursor: pointer;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
     &__title {
         margin-bottom: 2rem;
     }

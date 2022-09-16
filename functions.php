@@ -3,13 +3,14 @@
 // Add theme support
 add_theme_support('post-thumbnails', ['post', 'page']);
 
-// Load main CSS file
-function viaggin_enqueque_style() {
+// Load JavaScript and css files
+function viaggin_enqueue_script() {
+
     wp_enqueue_style('style-css', get_stylesheet_directory_uri() . '/style.css', [], time(), 'all');
     wp_enqueue_style('main-css', get_stylesheet_directory_uri() . '/assets/css/main.css', ['style-css'], time(), 'all');
 }
 
-add_action('wp_enqueue_scripts', 'viaggin_enqueque_style');
+add_action('wp_enqueue_scripts', 'viaggin_enqueue_script');
 
 /**
  * Create a function that get
