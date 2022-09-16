@@ -6,12 +6,12 @@
         <ul class="content__sidebar-menu">
             <li class="content__sidebar-menu-item">
                 <a class="link-no-style" href="https://www.facebook.com/viaggin/" target="_blank">
-                    <img src="#" alt="Facebook Icon">
+                    <img class="content__sidebar-social-icon" src="<?= get_template_directory_uri(); ?>/images/facebook-logo.png" alt="Facebook Icon">
                 </a>
             </li>
             <li class="content__sidebar-menu-item">
                 <a class="link-no-style" href="https://www.instagram.com/viaggin_official/" target="_blank">
-                    <img src="#" alt="Instagram Icon">
+                    <img class="content__sidebar-social-icon" src="<?= get_template_directory_uri(); ?>/images/instagram-logo.png" alt="Instagram Icon">
                 </a>
             </li>
         </ul>
