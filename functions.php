@@ -74,11 +74,11 @@ function getAuthorImage($authorEmail): string {
 
     switch ($authorEmail) {
         case 'info@marcovaleri.net':
-            $authorImage = createLink('/wp-content/uploads/marco-valeri.jpeg');
+            $authorImage = createLink('/wp-content/uploads/marco-valeri.jpg');
             break;
         
         case 'marcovaleri@hotmail.it':
-            $authorImage = createLink('/wp-content/uploads/marco-valeri.jpeg');
+            $authorImage = createLink('/wp-content/uploads/marco-valeri.jpg');
             break;
 
         case 'emanuelciuro@viaggin.com':

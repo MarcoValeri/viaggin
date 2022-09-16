@@ -5,6 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ViaggIn</title>
 
+        <!-- Google AdSense -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9306947071363993"
+            crossorigin="anonymous"></script>
+
+        <!-- Google Analytics New -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSTXVCFJP7"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-FSTXVCFJP7');
+        </script>
+
         <!-- Include wp_head() -->
         <?php wp_head(); ?>
     </head>
