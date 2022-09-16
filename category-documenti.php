@@ -58,9 +58,6 @@
     }
     wp_reset_postdata();
     ?>
-    <div class="category__container-load">
-        <a href="#" class="button button--yellow">Tutte le categorie</a>
-    </div>
 </section>
 <!-- Include footer.php -->
 <?php get_footer(); ?>

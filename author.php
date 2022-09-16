@@ -23,9 +23,6 @@ $authorDescription = get_the_author_meta('description');
             </div>
         </a>
     </div>
-    <div class="author__container-all-authors">
-        <a href="{{ path('app_authors') }}" class="button button--yellow">Tutti gli autori</a>
-    </div>
     <div class="author__container-articles">
         <div class="author__container-title">
             <h2 class="h2">Tutti gli articoli di <?= $authorName; ?></h2>

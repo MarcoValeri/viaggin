@@ -6,22 +6,22 @@
         <div class="home__container-category home__container-viaggi">
             <h2 class="home__category-title h2">Viaggi</h2>
             <p class="home__category-description body-2">I Viaggi di <em>ViaggIn</em>: itinerari, destinazioni e curiosità da ogni parte del mondo</p>
-            <a class="button button--black" href="/viaggin/category/viaggi/">Scopri di più</a>
+            <a class="button button--black" href="<?= createLink('/category/viaggi/'); ?>">Scopri di più</a>
         </div>
         <div class="home__container-category home__container-eventi">
             <h2 class="home__category-title h2">Eventi</h2>
             <p class="home__category-description body-2">Gli Eventi di <em>ViaggIn</em>: musei, sagre, feste, esposizioni e curiosità da ogni parte del mondo</p>
-            <a class="button button--black" href="/viaggin/category/eventi/">Scopri di più</a>
+            <a class="button button--black" href="<?= createLink('/category/eventi/'); ?>">Scopri di più</a>
         </div>
         <div class="home__container-category home__container-documenti">
             <h2 class="home__category-title h2">Documenti</h2>
             <p class="home__category-description body-2">Documenti di viaggio di <em>ViaggIn</em>: guide per viaggiare informati</p>
-            <a class="button button--black" href="/viaggin/category/documenti/">Scopri di più</a>
+            <a class="button button--black" href="<?= createLink('/category/documenti/"'); ?>">Scopri di più</a>
         </div>
         <div class="home__container-category home__container-estero">
             <h2 class="home__category-title h2">Vivere all'estero</h2>
             <p class="home__category-description body-2">Vivere all'estero: guide pratiche, accurate e aggiornate per trasferisi a vivere all'estero</p>
-            <a class="button button--black" href="/viaggin/category/vivere-estero/">Scopri di più</a>
+            <a class="button button--black" href="<?= createLink('/category/vivere-estero/'); ?>">Scopri di più</a>
         </div>
     </div>
 </section>
@@ -76,9 +76,6 @@
         wp_reset_postdata();
     }
     ?>
-    <div class="home__container-all-article">
-        <a href="{{ path('app_article_list') }}" class="button button--yellow">Scopri tutti gli articoli</a>
-    </div>
 </section>
 
 <!-- Include footer.php -->

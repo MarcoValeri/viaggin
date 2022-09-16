@@ -29,7 +29,7 @@ $commentsNum = get_comments_number();
         'fields' => [
             'author'    => '<div class="article__form-comments-name article__input"><input type="text" id="author" name="author" placeholder="Nome *" /></div>',
             'email'     => '<div class="article__form-comments-email article__input"><input type="email" id="email" name="email" placeholder="Email *" /></div>',
-            'cookies'   => '<div class="article__form-comments-privacy article__input"><input type="checkbox" id="Privacy" name="Privacy" required="required" value="1"><label class="contact__privacy-label body-3 required" for="Privacy">Accetto la privacy policy</label></div><div class="article__form-comments-submit article__input"><p class="body-3">Per maggiori informazioni consulta la <a href="#">Privacy Policy di ViaggIn</a></p></div>'
+            'cookies'   => '<div class="article__form-comments-privacy article__input"><input type="checkbox" id="Privacy" name="Privacy" required="required" value="1"><label class="contact__privacy-label body-3 required" for="Privacy">Accetto la privacy policy</label></div><div class="article__form-comments-submit article__input"><p class="body-3">Per maggiori informazioni consulta la <a href="/privacy/">Privacy Policy di ViaggIn</a></p></div>'
         ],
         'submit_button'             => '<div class="article__form-comments-button"><input class="button button--black" type="submit" name="submit" value="Invia" /></div>',
         'title_reply'               => __('*** La tua email non verrà pubblicata ***'),

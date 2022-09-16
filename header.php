@@ -18,13 +18,13 @@
                 </label>
                 <input class="nav__input" name="open" id="open" type="checkbox">
                 <ul class="nav__menu">
-                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('')) ? 'link-mark' : ''; ?>" href="/viaggin">Home</li>
-                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/viaggi')) ? 'link-mark' : ''; ?>" href="/viaggin/category/viaggi/">Viaggi</a></li>
-                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/eventi')) ? 'link-mark' : ''; ?>" href="/viaggin/category/eventi/">Eventi</a></li>
-                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/documenti')) ? 'link-mark' : ''; ?>" href="/viaggin/category/documenti/">Documenti</a></li>
-                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/vivere-estero')) ? 'link-mark' : ''; ?>" href="/viaggin/category/vivere-estero/">Vivere all'estero</a></li>
-                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/chi-siamo')) ? 'link-mark' : ''; ?>" href="/viaggin/chi-siamo/">Chi siamo</a></li>
-                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/contatti')) ? 'link-mark' : ''; ?>" href="/viaggin/contatti/">Contatti</a></li>
+                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('')) ? 'link-mark' : ''; ?>" href="<?= createLink('/') ?>">Home</li>
+                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/viaggi')) ? 'link-mark' : ''; ?>" href="<?= createLink('/category/viaggi/'); ?>">Viaggi</a></li>
+                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/eventi')) ? 'link-mark' : ''; ?>" href="<?= createLink('/category/eventi/'); ?>">Eventi</a></li>
+                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/documenti')) ? 'link-mark' : ''; ?>" href="<?= createLink('/category/documenti/'); ?>">Documenti</a></li>
+                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/vivere-estero')) ? 'link-mark' : ''; ?>" href="<?= createLink('/category/vivere-estero/'); ?>">Vivere all'estero</a></li>
+                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/chi-siamo')) ? 'link-mark' : ''; ?>" href="<?= createLink('/chi-siamo/'); ?>">Chi siamo</a></li>
+                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/contatti')) ? 'link-mark' : ''; ?>" href="<?= createLink('/contatti/'); ?>">Contatti</a></li>
                 </ul>
             </nav>
             <div class="header__container">
@@ -34,9 +34,6 @@
                 <div class="breadcrumbs">
                     <div class="breadcrumbs__container">
                         <?= showBreadcrumbs(); ?>
-                        <!-- <a class="breadcrumbs__item link-no-style body-4" href="/viaggin">Home</a>
-                        /
-                        <a class="breadcrumbs__item link-no-style body-4" href="/viaggin/category/viaggi/">Categoria Viaggi</a> -->
                     </div>
                 </div>
             </div>

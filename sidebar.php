@@ -5,12 +5,12 @@
         </div>
         <ul class="content__sidebar-menu">
             <li class="content__sidebar-menu-item">
-                <a class="link-no-style" href="https://www.facebook.com/marcovaleri.net" target="_blank">
+                <a class="link-no-style" href="https://www.facebook.com/viaggin/" target="_blank">
                     <img src="#" alt="Facebook Icon">
                 </a>
             </li>
             <li class="content__sidebar-menu-item">
-                <a class="link-no-style" href="https://www.instagram.com/marco__valeri/" target="_blank">
+                <a class="link-no-style" href="https://www.instagram.com/viaggin_official/" target="_blank">
                     <img src="#" alt="Instagram Icon">
                 </a>
             </li>
@@ -22,22 +22,22 @@
         </div>
         <ul class="content__sidebar-menu-list">
             <li class="content__sidebar-menu-item-list">
-                <a class="link body-2" href="#">
+                <a class="link body-2" href="<?= createLink('/category/viaggi/'); ?>">
                     Viaggi
                 </a>
             </li>
             <li class="content__sidebar-menu-item-list">
-                <a class="link body-2" href="#">
+                <a class="link body-2" href="<?= createLink('/category/eventi/'); ?>">
                     Eventi
                 </a>
             </li>
             <li class="content__sidebar-menu-item-list">
-                <a class="link body-2" href="#">
+                <a class="link body-2" href="<?= createLink('/category/documenti/"'); ?>">
                     Documenti di viaggio
                 </a>
             </li>
             <li class="content__sidebar-menu-item-list">
-                <a class="link body-2" href="#">
+                <a class="link body-2" href="<?= createLink('/category/vivere-estero/'); ?>">
                     Vivere all'estero
                 </a>
             </li>

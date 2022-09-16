@@ -46,7 +46,7 @@ if (have_posts()) {
                         <?php
                             foreach ($postTags as $key => $postTag) {
                         ?>
-                                <a class="link body-4" href="http://localhost/viaggin/tag/<?= $postTag->slug; ?>"><?= $postTag->name; ?></a><?= count($postTags) === ($key + 1) ? '' : ','; ?>
+                                <a class="link body-4" href="<?= createLink('/tag/' . $postTag->slug) ?>"><?= $postTag->name; ?></a><?= count($postTags) === ($key + 1) ? '' : ','; ?>
                         <?php
                             }
                         }
