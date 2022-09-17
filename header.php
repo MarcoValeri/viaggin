@@ -44,7 +44,9 @@
             </nav>
             <div class="header__container">
                 <div class="header__logo">
-                    <img class="header__logo" src="<?= get_template_directory_uri(); ?>/images/viaggin-logo.png" alt="Viaggin Logo" width="" height="">
+                    <a href="<?= createLink(''); ?>" aria-label="Link to Homepage">
+                        <img class="header__logo" src="<?= get_template_directory_uri(); ?>/images/viaggin-logo.png" alt="Viaggin Logo" width="" height="">
+                    </a>
                 </div>
                 <div class="breadcrumbs">
                     <div class="breadcrumbs__container">

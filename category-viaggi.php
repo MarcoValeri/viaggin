@@ -31,7 +31,7 @@
             $viaggiPostAuthor = get_the_author();
             $viaggiPostImageUrl = get_the_post_thumbnail_url();
             $viaggiPostImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
-            $viaggiPostCommentsNumb = get_comments(['count' => true]);
+            $viaggiPostCommentsNumb = get_comments(['post_id' => $post->ID, 'count' => true]);
             $viaggiPostContent = get_the_content();
     ?>
     <div class="article-card">
@@ -48,7 +48,7 @@
                     <?php
                     $viaggiPostExcerpt = substr($viaggiPostContent, 0, 400);
                     $viaggiPostExcerptNoHtml = strip_tags($viaggiPostExcerpt);
-                    echo $viaggiPostExcerptNoHtml;
+                    echo $viaggiPostExcerptNoHtml . '...[continua a leggere]';
                     ?>
                 </div>
             </div>

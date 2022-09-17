@@ -31,7 +31,7 @@
             $esteroPostAuthor = get_the_author();
             $esteroPostImageUrl = get_the_post_thumbnail_url();
             $esteroPostImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
-            $esteroPostCommentsNumb = get_comments(['count' => true]);
+            $esteroPostCommentsNumb = get_comments(['post_id' => $post->ID, 'count' => true]);
             $esteroPostContent = get_the_content();
     ?>
     <div class="article-card">
@@ -48,7 +48,7 @@
                     <?php
                     $esteroPostExcerpt = substr($esteroPostContent, 0, 400);
                     $esteroPostExcerptNoHtml = strip_tags($esteroPostExcerpt);
-                    echo $esteroPostExcerptNoHtml;
+                    echo $esteroPostExcerptNoHtml . '...[continua a leggere]';
                     ?>
                 </div>
             </div>

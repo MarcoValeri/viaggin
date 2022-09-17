@@ -4,6 +4,7 @@
  */
 
 $commentsNum = get_comments_number();
+$postID = get_post()->ID;
 ?>
 
 <section id="article-container-comments" class="article__container-comments-form">
@@ -53,7 +54,8 @@ $commentsNum = get_comments_number();
      * Show approved comments
      */
     $argsSingleComment = [
-        'status'    => 'approve'
+        'status'    => 'approve',
+        'post_id' => $postID,
     ];
     
     $commentsQuery = new WP_Comment_Query();

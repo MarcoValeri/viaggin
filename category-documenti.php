@@ -31,7 +31,7 @@
             $documentiPostAuthor = get_the_author();
             $documentiPostImageUrl = get_the_post_thumbnail_url();
             $documentiPostImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
-            $documentiPostCommentsNumb = get_comments(['count' => true]);
+            $documentiPostCommentsNumb = get_comments(['post_id' => $post->ID, 'count' => true]);
             $documentiPostContent = get_the_content();
     ?>
     <div class="article-card">
@@ -48,7 +48,7 @@
                     <?php
                     $documentiPostExcerpt = substr($documentiPostContent, 0, 400);
                     $documentiPostExcerpt = strip_tags($documentiPostExcerpt);
-                    echo $documentiPostExcerpt;
+                    echo $documentiPostExcerpt . '...[continua a leggere]';
                     ?>
                 </div>
             </div>

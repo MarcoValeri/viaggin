@@ -31,7 +31,7 @@
             $eventiPostAuthor = get_the_author();
             $eventiPostImageUrl = get_the_post_thumbnail_url();
             $eventiPostImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
-            $eventiPostCommentsNumb = get_comments(['count' => true]);
+            $eventiPostCommentsNumb = get_comments(['post_id' => $post->ID, 'count' => true]);
             $eventiPostContent = get_the_content();
     ?>
     <div class="article-card">
@@ -48,7 +48,7 @@
                     <?php
                     $eventiPostExcerpt = substr($eventiPostContent, 0, 400);
                     $eventiPostExcerptNoHtml = strip_tags($eventiPostExcerpt);
-                    echo $eventiPostExcerptNoHtml;
+                    echo $eventiPostExcerptNoHtml . '...[continua a leggere]';
                     ?>
                 </div>
             </div>

@@ -19,7 +19,7 @@ if (have_posts()) {
         $postCommentsNum = get_comments_number();
         $postContent = get_the_content();
         $postCategoryName = get_the_category($postID)[0]->name;
-        $postCategoryUrl = get_category_link($postID);
+        $postCategoryUrl = get_the_category($postID)[0]->slug;
         $postTags = get_the_tags();
 ?>
         <article class="article">
@@ -36,7 +36,7 @@ if (have_posts()) {
             <div class="article__container-taxonomi">
                 <ul class="list-no-style">
                     <li class="list-no-style__item">
-                        <span class="body-4">Categoria:</span> <a href="<?= $postCategoryUrl; ?>" class="link body-4"><?= $postCategoryName; ?></a>
+                        <span class="body-4">Categoria:</span> <a href="<?= createLink('/category/' . $postCategoryUrl); ?>" class="link body-4"><?= $postCategoryName; ?></a>
                     </li>
                     <li class="list-no-style__item">
                         <?php 
