@@ -32,6 +32,7 @@
     }
 
     &__menu {
+        margin: auto;
         @include respond('lg') {
             display: none;
         }

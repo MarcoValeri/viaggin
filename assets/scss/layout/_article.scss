@@ -10,6 +10,10 @@
 .article {
     padding: 0 1rem;
 
+    @include respond(md) {
+        width: 80%;
+    }
+
     h1 {
         font-size: 5rem;
     
@@ -55,7 +59,8 @@
         margin-left: 5rem;
 
         @include respond(md) {
-            margin-left: 2rem;
+            margin-left: 0;
+	        width: 80%;
         }
     }
 
@@ -63,12 +68,18 @@
         font-size: 2rem;
         line-height: 1.6;
         padding-left: 1rem;
+
+        @include respond(md) {
+            padding-left: .5rem;
+        }
     }
 
     p {
         font-size: 2rem;
         line-height: 1.6;
         margin-bottom: 2rem;
+
+        
     }
 
     a {
@@ -96,7 +107,8 @@
         margin-bottom: .5rem;
     }
 
-    &__index {
+    &__index,
+    .sommario {
         width: 80%;
         margin: 5rem auto !important;
         padding: 3rem;
@@ -108,7 +120,8 @@
         }
 
         @include respond(md) {
-            padding: 3rem 1rem;
+            width: 80%;
+            padding: 3rem 1.5rem;
         }
     }
 
@@ -171,6 +184,10 @@
 
     &__container-author {
         margin-bottom: 5rem;
+
+        @include respond(md) {
+            width: 80%;
+        }
     }
 
     &__container-author-title {
@@ -199,6 +216,10 @@
         margin: 0 auto 5rem auto;
         border: 1px solid $grey-light;
         border-radius: 5px;
+
+        @include respond(md) {
+            width: 80%;
+        }
     }
 
     &__form-comments-grid {
@@ -331,6 +352,12 @@
     &__comments-title {
         margin-bottom: 2rem;
         text-align: center;
+    }
+
+    &__container-comments {
+        @include respond(md) {
+            width: 80%;
+        }
     }
 
 }

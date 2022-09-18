@@ -22,14 +22,24 @@
 
     &__main {
         grid-area: content__main;
+
+        @include respond(sm) {
+            width: 90%;
+        }
+
+        @include respond(xs) {
+            width: 80%;
+        }
     }
     
     &__sidebar {
         grid-area: content__sidebar;
 
         @include respond(lg) {
+            width: 90%;
             margin-bottom: 5rem;
         }
+
     }
 
     &__sidebar-content {
