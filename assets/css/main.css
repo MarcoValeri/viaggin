@@ -273,9 +273,13 @@ html {
 * <ol>
 * <ul>
 * <table>
+* iframe
 */
 .article {
   padding: 0 1rem; }
+  @media only screen and (max-width: 767px) {
+    .article {
+      width: 100%; } }
   .article h1 {
     font-size: 5rem; }
     @media only screen and (max-width: 767px) {
@@ -305,18 +309,10 @@ html {
   .article ul,
   .article ol {
     margin-left: 5rem; }
-    @media only screen and (max-width: 767px) {
-      .article ul,
-      .article ol {
-        margin-left: 0;
-        width: 80%; } }
   .article li {
     font-size: 2rem;
     line-height: 1.6;
     padding-left: 1rem; }
-    @media only screen and (max-width: 767px) {
-      .article li {
-        padding-left: .5rem; } }
   .article p {
     font-size: 2rem;
     line-height: 1.6;
@@ -336,6 +332,8 @@ html {
     padding: 1rem;
     text-align: center;
     border: 1px solid black; }
+  .article iframe {
+    width: 100%; }
   .article__title {
     margin-bottom: 2rem; }
   .article__data {
@@ -348,13 +346,14 @@ html {
   .article__index,
   .article .sommario {
     width: 80%;
-    margin: 5rem auto !important;
     padding: 3rem;
     border-radius: 5px;
     border: 1px solid #a39a9a; }
     .article__index:hover,
     .article .sommario:hover {
       border: 1px solid #ff785a; }
+  .article .sommario ol {
+    margin-left: 1rem; }
   .article__index-item {
     margin-left: 5rem; }
     @media only screen and (max-width: 767px) {
@@ -391,6 +390,9 @@ html {
     border-radius: 5px; }
   .article__container-author {
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 767px) {
+      .article__container-author {
+        width: 100%; } }
   .article__container-author-title {
     text-align: center; }
   .article__comments-sub-title {
@@ -406,9 +408,14 @@ html {
   .article__container-comments-form {
     width: 90%;
     padding: 1rem;
-    margin: 0 auto 5rem auto;
+    margin: 0rem auto 5rem auto;
     border: 1px solid #a39a9a;
     border-radius: 5px; }
+    @media only screen and (max-width: 767px) {
+      .article__container-comments-form {
+        width: 100%;
+        margin: 0;
+        padding: 0; } }
   .article__form-comments-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -496,6 +503,9 @@ html {
   .article__comments-title {
     margin-bottom: 2rem;
     text-align: center; }
+  @media only screen and (max-width: 767px) {
+    .article__container-comments {
+      width: 100%; } }
 
 /*
  * Style for the to do list.
@@ -625,6 +635,9 @@ html {
       grid-template-areas: "content__main" "content__sidebar"; } }
   .content__main {
     grid-area: content__main; }
+    @media only screen and (max-width: 575px) {
+      .content__main {
+        width: 90%; } }
   .content__sidebar {
     grid-area: content__sidebar; }
     @media only screen and (max-width: 991px) {

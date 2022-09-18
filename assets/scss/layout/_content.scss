@@ -23,13 +23,9 @@
     &__main {
         grid-area: content__main;
 
-        // @include respond(sm) {
-        //     width: 90%;
-        // }
-
-        // @include respond(xs) {
-        //     width: 80%;
-        // }
+        @include respond(sm) {
+            width: 90%;
+        }
     }
     
     &__sidebar {

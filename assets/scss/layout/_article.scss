@@ -7,13 +7,14 @@
 * <ol>
 * <ul>
 * <table>
+* iframe
 */
 .article {
     padding: 0 1rem;
 
-    // @include respond(md) {
-    //     width: 80%;
-    // }
+    @include respond(md) {
+        width: 100%;
+    }
 
     h1 {
         font-size: 5rem;
@@ -58,21 +59,12 @@
     ul,
     ol {
         margin-left: 5rem;
-
-        @include respond(md) {
-            margin-left: 0;
-	        width: 80%;
-        }
     }
 
     li {
         font-size: 2rem;
         line-height: 1.6;
         padding-left: 1rem;
-
-        @include respond(md) {
-            padding-left: .5rem;
-        }
     }
 
     p {
@@ -106,6 +98,10 @@
         border: 1px solid black;
     }
 
+    iframe {
+        width: 100%;
+    }
+
     &__title {
         margin-bottom: 2rem;
     }
@@ -124,7 +120,6 @@
     &__index,
     .sommario {
         width: 80%;
-        margin: 5rem auto !important;
         padding: 3rem;
         border-radius: 5px;
         border: 1px solid $grey-light;
@@ -132,11 +127,10 @@
         &:hover {
             border: 1px solid $red-link;
         }
+    }
 
-        // @include respond(md) {
-        //     width: 80%;
-        //     padding: 3rem 1.5rem;
-        // }
+    .sommario ol {
+        margin-left: 1rem;
     }
 
     &__index-item {
@@ -199,9 +193,9 @@
     &__container-author {
         margin-bottom: 5rem;
 
-        // @include respond(md) {
-        //     width: 80%;
-        // }
+        @include respond(md) {
+            width: 100%;
+        }
     }
 
     &__container-author-title {
@@ -227,13 +221,15 @@
     &__container-comments-form {
         width: 90%;
         padding: 1rem;
-        margin: 0 auto 5rem auto;
+        margin: 0rem auto 5rem auto;
         border: 1px solid $grey-light;
         border-radius: 5px;
 
-        // @include respond(md) {
-        //     width: 80%;
-        // }
+        @include respond(md) {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
     }
 
     &__form-comments-grid {
@@ -368,11 +364,11 @@
         text-align: center;
     }
 
-    // &__container-comments {
-    //     @include respond(md) {
-    //         width: 80%;
-    //     }
-    // }
+    &__container-comments {
+        @include respond(md) {
+            width: 100%;
+        }
+    }
 
 }
 
