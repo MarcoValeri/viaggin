@@ -1,4 +1,10 @@
 .home {
+
+    &__main {
+        @include respond(md) {
+            margin-left: 10%;
+        }
+    }
     
     // Main container
     &__container-categories {
@@ -79,6 +85,10 @@
     &__container-articles {
         width: 90%;
         margin: 5rem auto;
+
+        @include respond(md) {
+            margin-left: 10%;
+        }
     }
 
     &__container-title {
