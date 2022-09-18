@@ -2,6 +2,10 @@
     position: relative;
     height: 40vh;
 
+    @include respond(sm) {
+        height: 50vh;
+    }
+
     &__container {
         position: absolute;
         width: 90%;

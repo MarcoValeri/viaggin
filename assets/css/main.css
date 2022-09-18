@@ -71,28 +71,34 @@ html {
       background-color: #000; }
 
 .h1 {
-  font-size: 7rem; }
+  font-size: 5rem; }
   @media only screen and (max-width: 767px) {
     .h1 {
-      font-size: 5rem; } }
+      font-size: 4rem; } }
   @media only screen and (max-width: 575px) {
     .h1 {
       font-size: 3rem; } }
 
 .h2 {
-  font-size: 5rem; }
+  font-size: 4rem; }
   @media only screen and (max-width: 767px) {
     .h2 {
-      font-size: 4rem; } }
+      font-size: 3rem; } }
   @media only screen and (max-width: 575px) {
     .h2 {
-      font-size: 2rem; } }
+      font-size: 2.5rem; } }
 
 .h3 {
   font-size: 3rem; }
+  @media only screen and (max-width: 767px) {
+    .h3 {
+      font-size: 2.5rem; } }
 
 .h4 {
   font-size: 2.5rem; }
+  @media only screen and (max-width: 767px) {
+    .h4 {
+      font-size: 2.2rem; } }
 
 .link {
   text-decoration: none;
@@ -267,231 +273,219 @@ html {
 * <ol>
 * <ul>
 */
-.article h2 {
-  font-size: 5rem; }
-  @media only screen and (max-width: 575px) {
-    .article h2 {
-      font-size: 4rem; } }
-
-.article h3 {
-  font-size: 3rem; }
-
-.article h4 {
-  font-size: 2.5rem; }
-
-.article ul,
-.article ol {
-  margin-left: 5rem; }
-  @media only screen and (max-width: 767px) {
-    .article ul,
-    .article ol {
-      margin-left: 2rem; } }
-
-.article li {
-  font-size: 2rem;
-  line-height: 1.6;
-  padding-left: 1rem; }
-
-.article p {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 2rem; }
-
-.article a {
-  text-decoration: none;
-  color: #ff785a;
-  cursor: pointer; }
-  .article a:hover {
-    color: #000; }
-
-.article__title {
-  margin-bottom: 2rem; }
-
-.article__data {
-  margin-left: 0 !important;
-  list-style: none;
-  margin-bottom: 2rem; }
-
-.article__data-item {
-  color: #a39a9a;
-  margin-bottom: .5rem; }
-
-.article__index {
-  width: 80%;
-  margin: 5rem auto !important;
-  padding: 3rem;
-  border-radius: 5px;
-  border: 1px solid #a39a9a; }
-  .article__index:hover {
-    border: 1px solid #ff785a; }
-  @media only screen and (max-width: 767px) {
-    .article__index {
-      padding: 3rem 1rem; } }
-
-.article__index-item {
-  margin-left: 5rem; }
-  @media only screen and (max-width: 767px) {
-    .article__index-item {
-      margin-left: 3rem; } }
-
-.article__container-image {
-  margin: 3rem auto;
-  text-align: center; }
-
-.article__img {
-  width: 60%;
-  margin-bottom: 2rem; }
-  @media only screen and (max-width: 767px) {
-    .article__img {
-      width: 90%; } }
-  @media only screen and (max-width: 575px) {
-    .article__img {
-      width: 100%; } }
-
-.article .wp-block-image {
-  margin: 3rem auto;
-  text-align: center; }
-  .article .wp-block-image img {
+.article {
+  padding: 0 1rem; }
+  .article h1 {
+    font-size: 5rem; }
+    @media only screen and (max-width: 767px) {
+      .article h1 {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 575px) {
+      .article h1 {
+        font-size: 3rem; } }
+  .article h2 {
+    font-size: 4rem; }
+    @media only screen and (max-width: 767px) {
+      .article h2 {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 575px) {
+      .article h2 {
+        font-size: 2.5rem; } }
+  .article h3 {
+    font-size: 3rem; }
+    @media only screen and (max-width: 767px) {
+      .article h3 {
+        font-size: 2.5rem; } }
+  .article h4 {
+    font-size: 2.5rem; }
+    @media only screen and (max-width: 767px) {
+      .article h4 {
+        font-size: 2.2rem; } }
+  .article ul,
+  .article ol {
+    margin-left: 5rem; }
+    @media only screen and (max-width: 767px) {
+      .article ul,
+      .article ol {
+        margin-left: 2rem; } }
+  .article li {
+    font-size: 2rem;
+    line-height: 1.6;
+    padding-left: 1rem; }
+  .article p {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem; }
+  .article a {
+    text-decoration: none;
+    color: #ff785a;
+    cursor: pointer; }
+    .article a:hover {
+      color: #000; }
+  .article__title {
+    margin-bottom: 2rem; }
+  .article__data {
+    margin-left: 0 !important;
+    list-style: none;
+    margin-bottom: 2rem; }
+  .article__data-item {
+    color: #a39a9a;
+    margin-bottom: .5rem; }
+  .article__index {
+    width: 80%;
+    margin: 5rem auto !important;
+    padding: 3rem;
+    border-radius: 5px;
+    border: 1px solid #a39a9a; }
+    .article__index:hover {
+      border: 1px solid #ff785a; }
+    @media only screen and (max-width: 767px) {
+      .article__index {
+        padding: 3rem 1rem; } }
+  .article__index-item {
+    margin-left: 5rem; }
+    @media only screen and (max-width: 767px) {
+      .article__index-item {
+        margin-left: 3rem; } }
+  .article__container-image {
+    margin: 3rem auto;
+    text-align: center; }
+  .article__img {
     width: 60%;
     margin-bottom: 2rem; }
     @media only screen and (max-width: 767px) {
-      .article .wp-block-image img {
+      .article__img {
         width: 90%; } }
     @media only screen and (max-width: 575px) {
-      .article .wp-block-image img {
+      .article__img {
         width: 100%; } }
-  .article .wp-block-image figcaption {
-    font-size: 1.5rem;
-    font-style: italic; }
-
-.article__container-taxonomi {
-  padding: 1rem .5rem;
-  margin-bottom: 5rem;
-  border: 1px solid #a39a9a;
-  border-radius: 5px; }
-
-.article__container-author {
-  margin-bottom: 5rem; }
-
-.article__container-author-title {
-  text-align: center; }
-
-.article__comments-sub-title {
-  margin-bottom: 2rem; }
-
-.article__container-comments-success {
-  padding: 1rem;
-  border: 2px solid #0c8346;
-  border-radius: 5px;
-  margin-bottom: 2rem; }
-
-.article__comments-success {
-  color: #0c8346;
-  font-weight: 700; }
-
-.article__container-comments-form {
-  width: 90%;
-  padding: 1rem;
-  margin: 0 auto 5rem auto;
-  border: 1px solid #a39a9a;
-  border-radius: 5px; }
-
-.article__form-comments-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "article__form-comments-user" "article__form-comments-name" "article__form-comments-email" "article__form-comments-comment" "article__form-comments-privacy" "article__form-comments-submit" "article__form-comments-button";
-  /**
+  .article .wp-block-image {
+    margin: 3rem auto;
+    text-align: center; }
+    .article .wp-block-image img {
+      width: 60%;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 767px) {
+        .article .wp-block-image img {
+          width: 90%; } }
+      @media only screen and (max-width: 575px) {
+        .article .wp-block-image img {
+          width: 100%; } }
+    .article .wp-block-image figcaption {
+      font-size: 1.5rem;
+      font-style: italic; }
+  .article__container-taxonomi {
+    padding: 1rem .5rem;
+    margin-bottom: 5rem;
+    border: 1px solid #a39a9a;
+    border-radius: 5px; }
+  .article__container-author {
+    margin-bottom: 5rem; }
+  .article__container-author-title {
+    text-align: center; }
+  .article__comments-sub-title {
+    margin-bottom: 2rem; }
+  .article__container-comments-success {
+    padding: 1rem;
+    border: 2px solid #0c8346;
+    border-radius: 5px;
+    margin-bottom: 2rem; }
+  .article__comments-success {
+    color: #0c8346;
+    font-weight: 700; }
+  .article__container-comments-form {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto 5rem auto;
+    border: 1px solid #a39a9a;
+    border-radius: 5px; }
+  .article__form-comments-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "article__form-comments-user" "article__form-comments-name" "article__form-comments-email" "article__form-comments-comment" "article__form-comments-privacy" "article__form-comments-submit" "article__form-comments-button";
+    /**
         * Nested errors and
         * inputs rules
         * because grid is
         * outside of article class
         * on Twig file
         */ }
-  .article__form-comments-grid div ul {
-    list-style: none; }
-  .article__form-comments-grid div ul li {
-    font-size: 1.6rem;
-    color: #f00; }
-  .article__form-comments-grid input[type=text],
-  .article__form-comments-grid input[type=email] {
-    width: 50%;
-    font-size: 1.8rem;
-    padding: 1rem;
-    margin: 2rem 0rem;
-    transition: all .5s;
-    border-radius: 5px;
-    border: none;
-    outline: 2px solid #000; }
-    .article__form-comments-grid input[type=text]:focus,
-    .article__form-comments-grid input[type=email]:focus {
-      width: 90%;
+    .article__form-comments-grid div ul {
+      list-style: none; }
+    .article__form-comments-grid div ul li {
+      font-size: 1.6rem;
+      color: #f00; }
+    .article__form-comments-grid input[type=text],
+    .article__form-comments-grid input[type=email] {
+      width: 50%;
+      font-size: 1.8rem;
+      padding: 1rem;
+      margin: 2rem 0rem;
+      transition: all .5s;
+      border-radius: 5px;
       border: none;
-      outline: 2px solid #0c8346; }
-    @media only screen and (max-width: 767px) {
-      .article__form-comments-grid input[type=text],
-      .article__form-comments-grid input[type=email] {
-        width: 60%; } }
-  .article__form-comments-grid input[type=checkbox] {
-    -ms-transform: scale(2);
-    -moz-transform: scale(2);
-    -webkit-transform: scale(2);
-    -o-transform: scale(2);
-    transform: scale(2);
-    padding: 10px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    cursor: pointer; }
-  .article__form-comments-grid textarea {
-    width: 50%;
-    height: auto;
-    min-height: 10rem;
-    font-size: 1.8rem;
-    padding: 1rem;
-    margin: 2rem 0rem;
-    transition: all .5s;
-    border-radius: 5px;
-    border: none;
-    outline: 2px solid #000; }
-    .article__form-comments-grid textarea:focus {
-      width: 90%;
+      outline: 2px solid #000; }
+      .article__form-comments-grid input[type=text]:focus,
+      .article__form-comments-grid input[type=email]:focus {
+        width: 90%;
+        border: none;
+        outline: 2px solid #0c8346; }
+      @media only screen and (max-width: 767px) {
+        .article__form-comments-grid input[type=text],
+        .article__form-comments-grid input[type=email] {
+          width: 60%; } }
+    .article__form-comments-grid input[type=checkbox] {
+      -ms-transform: scale(2);
+      -moz-transform: scale(2);
+      -webkit-transform: scale(2);
+      -o-transform: scale(2);
+      transform: scale(2);
+      padding: 10px;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      cursor: pointer; }
+    .article__form-comments-grid textarea {
+      width: 50%;
+      height: auto;
+      min-height: 10rem;
+      font-size: 1.8rem;
+      padding: 1rem;
+      margin: 2rem 0rem;
+      transition: all .5s;
+      border-radius: 5px;
       border: none;
-      outline: 2px solid #0c8346; }
-    @media only screen and (max-width: 767px) {
-      .article__form-comments-grid textarea {
-        width: 60%; } }
-
-.article__form-comments-user {
-  grid-area: article__form-comments-user;
-  margin-bottom: 2rem; }
-
-.article__form-comments-name {
-  grid-area: article__form-comments-name; }
-
-.article__form-comments-email {
-  grid-area: article__form-comments-email; }
-
-.article__form-comments-comment {
-  grid-area: article__form-comments-comment; }
-
-.article__form-comments-privacy {
-  grid-area: article__form-comments-privacy;
-  margin-bottom: 2rem; }
-  .article__form-comments-privacy .contact__privacy-label {
-    cursor: pointer; }
-
-.article__form-comments-submit {
-  grid-area: article__form-comments-submit;
-  margin-bottom: 2rem; }
-
-.article__form-comments-button {
-  grid-area: article__form-comments-button; }
-
-.article__form-button {
-  margin: 2rem 0; }
-
-.article__comments-title {
-  margin-bottom: 2rem;
-  text-align: center; }
+      outline: 2px solid #000; }
+      .article__form-comments-grid textarea:focus {
+        width: 90%;
+        border: none;
+        outline: 2px solid #0c8346; }
+      @media only screen and (max-width: 767px) {
+        .article__form-comments-grid textarea {
+          width: 60%; } }
+  .article__form-comments-user {
+    grid-area: article__form-comments-user;
+    margin-bottom: 2rem; }
+  .article__form-comments-name {
+    grid-area: article__form-comments-name; }
+  .article__form-comments-email {
+    grid-area: article__form-comments-email; }
+  .article__form-comments-comment {
+    grid-area: article__form-comments-comment; }
+  .article__form-comments-privacy {
+    grid-area: article__form-comments-privacy;
+    margin-bottom: 2rem; }
+    .article__form-comments-privacy .contact__privacy-label {
+      cursor: pointer; }
+  .article__form-comments-submit {
+    grid-area: article__form-comments-submit;
+    margin-bottom: 2rem; }
+  .article__form-comments-button {
+    grid-area: article__form-comments-button; }
+  .article__form-button {
+    margin: 2rem 0; }
+  .article__comments-title {
+    margin-bottom: 2rem;
+    text-align: center; }
 
 /*
  * Style for the to do list.
@@ -668,6 +662,9 @@ html {
 .header {
   position: relative;
   height: 40vh; }
+  @media only screen and (max-width: 575px) {
+    .header {
+      height: 50vh; } }
   .header__container {
     position: absolute;
     width: 90%;

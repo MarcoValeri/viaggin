@@ -8,21 +8,46 @@
 * <ul>
 */
 .article {
+    padding: 0 1rem;
 
-    h2 {
+    h1 {
         font-size: 5rem;
-
-        @include respond(sm) {
+    
+        @include respond(md) {
             font-size: 4rem;
         }
+    
+        @include respond(sm) {
+            font-size: 3rem;
+        }
     }
-
+    
+    h2 {
+        font-size: 4rem;
+    
+        @include respond(md) {
+            font-size: 3rem;
+        }
+    
+        @include respond(sm) {
+            font-size: 2.5rem;
+        }
+    }
+    
     h3 {
         font-size: 3rem;
+    
+        @include respond(md) {
+            font-size: 2.5rem;
+        }
     }
-
+    
     h4 {
         font-size: 2.5rem;
+    
+        @include respond(md) {
+            font-size: 2.2rem;
+        }
     }
 
     ul,

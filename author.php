@@ -3,6 +3,7 @@
 
 <?php
 // Get author data
+$authorID = get_the_author_meta('ID');
 $authorName = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
 $authorEmail = get_the_author_meta('user_email');
 $authorDescription = get_the_author_meta('description');
@@ -29,7 +30,7 @@ $authorDescription = get_the_author_meta('description');
         </div>
         <?php
         $authorPostArgs = [
-            'author'        => $current_user->ID,
+            'author'        => $authorID,
             'post_per_page' => 10,
             'order'         => 'DESC'
         ];
