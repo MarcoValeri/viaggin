@@ -272,12 +272,10 @@ html {
 * <p>
 * <ol>
 * <ul>
+* <table>
 */
 .article {
   padding: 0 1rem; }
-  @media only screen and (max-width: 767px) {
-    .article {
-      width: 80%; } }
   .article h1 {
     font-size: 5rem; }
     @media only screen and (max-width: 767px) {
@@ -329,6 +327,15 @@ html {
     cursor: pointer; }
     .article a:hover {
       color: #000; }
+  .article table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 2rem auto; }
+  .article table, .article td, .article th {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid black; }
   .article__title {
     margin-bottom: 2rem; }
   .article__data {
@@ -348,11 +355,6 @@ html {
     .article__index:hover,
     .article .sommario:hover {
       border: 1px solid #ff785a; }
-    @media only screen and (max-width: 767px) {
-      .article__index,
-      .article .sommario {
-        width: 80%;
-        padding: 3rem 1.5rem; } }
   .article__index-item {
     margin-left: 5rem; }
     @media only screen and (max-width: 767px) {
@@ -379,9 +381,6 @@ html {
       @media only screen and (max-width: 767px) {
         .article .wp-block-image img {
           width: 90%; } }
-      @media only screen and (max-width: 575px) {
-        .article .wp-block-image img {
-          width: 100%; } }
     .article .wp-block-image figcaption {
       font-size: 1.5rem;
       font-style: italic; }
@@ -392,9 +391,6 @@ html {
     border-radius: 5px; }
   .article__container-author {
     margin-bottom: 5rem; }
-    @media only screen and (max-width: 767px) {
-      .article__container-author {
-        width: 80%; } }
   .article__container-author-title {
     text-align: center; }
   .article__comments-sub-title {
@@ -413,9 +409,6 @@ html {
     margin: 0 auto 5rem auto;
     border: 1px solid #a39a9a;
     border-radius: 5px; }
-    @media only screen and (max-width: 767px) {
-      .article__container-comments-form {
-        width: 80%; } }
   .article__form-comments-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -503,9 +496,6 @@ html {
   .article__comments-title {
     margin-bottom: 2rem;
     text-align: center; }
-  @media only screen and (max-width: 767px) {
-    .article__container-comments {
-      width: 80%; } }
 
 /*
  * Style for the to do list.
@@ -588,6 +578,9 @@ html {
   border-left: 2px solid #fff;
   border-bottom: 2px solid #fff; }
 
+.list ul li label p {
+  font-size: 1.6rem; }
+
 /* END STYLE */
 .category__container-category {
   width: 80%;
@@ -632,12 +625,6 @@ html {
       grid-template-areas: "content__main" "content__sidebar"; } }
   .content__main {
     grid-area: content__main; }
-    @media only screen and (max-width: 575px) {
-      .content__main {
-        width: 90%; } }
-    @media only screen and (max-width: 380px) {
-      .content__main {
-        width: 80%; } }
   .content__sidebar {
     grid-area: content__sidebar; }
     @media only screen and (max-width: 991px) {

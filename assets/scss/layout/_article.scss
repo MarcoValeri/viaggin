@@ -6,13 +6,14 @@
 * <p>
 * <ol>
 * <ul>
+* <table>
 */
 .article {
     padding: 0 1rem;
 
-    @include respond(md) {
-        width: 80%;
-    }
+    // @include respond(md) {
+    //     width: 80%;
+    // }
 
     h1 {
         font-size: 5rem;
@@ -92,6 +93,19 @@
         }
     }
 
+    table {
+        width: 80%;
+        border-collapse: collapse;
+        margin: 2rem auto;
+    }
+
+    table, td, th {
+        font-size: 2rem;
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid black;
+    }
+
     &__title {
         margin-bottom: 2rem;
     }
@@ -119,10 +133,10 @@
             border: 1px solid $red-link;
         }
 
-        @include respond(md) {
-            width: 80%;
-            padding: 3rem 1.5rem;
-        }
+        // @include respond(md) {
+        //     width: 80%;
+        //     padding: 3rem 1.5rem;
+        // }
     }
 
     &__index-item {
@@ -164,9 +178,9 @@
                 width: 90%;
             }
 
-            @include respond(sm) {
-                width: 100%;
-            }
+            // @include respond(sm) {
+            //     width: 100%;
+            // }
         }
 
         figcaption {
@@ -185,9 +199,9 @@
     &__container-author {
         margin-bottom: 5rem;
 
-        @include respond(md) {
-            width: 80%;
-        }
+        // @include respond(md) {
+        //     width: 80%;
+        // }
     }
 
     &__container-author-title {
@@ -217,9 +231,9 @@
         border: 1px solid $grey-light;
         border-radius: 5px;
 
-        @include respond(md) {
-            width: 80%;
-        }
+        // @include respond(md) {
+        //     width: 80%;
+        // }
     }
 
     &__form-comments-grid {
@@ -354,11 +368,11 @@
         text-align: center;
     }
 
-    &__container-comments {
-        @include respond(md) {
-            width: 80%;
-        }
-    }
+    // &__container-comments {
+    //     @include respond(md) {
+    //         width: 80%;
+    //     }
+    // }
 
 }
 
@@ -455,6 +469,10 @@
 .list ul li label input:checked~span::before {
     border-left: 2px solid #fff;
     border-bottom: 2px solid #fff;
+}
+
+.list ul li label p {
+    font-size: 1.6rem;
 }
 
 /* END STYLE */
