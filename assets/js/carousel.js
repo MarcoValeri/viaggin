@@ -21,9 +21,39 @@ window.onload = () => {
     })
 
     // Click right button event
-    carouselRightBtn.addEventListener('click', () => {
-            slideNumber++;
+    if (carouselRightBtn) {
+        carouselRightBtn.addEventListener('click', () => {
+                slideNumber++;
+    
+                carouselSlides.forEach((element, item) => {
+                    
+                    if (item === slideNumber) {
+                        element.style.display = 'block';
+                    } else {
+                        element.style.display = 'none';
+                    }
+    
+                    if ((slideNumber + 1) === carouselSlidesNumber) {
+                        carouselRightBtn.style.display = 'none';
+                    } else {
+                        carouselRightBtn.style.display = 'block';
+                    }
+    
+                    // Show the left btn if the slideNum is not equal to 0
+                    if (slideNumber !== 0) {
+                        carouselLeftBtn.style.display = 'block';
+                    }
+    
+                })
+    
+        })
+    }
 
+    // Click left button event
+    if (carouselLeftBtn) {
+        carouselLeftBtn.addEventListener('click', () => {
+            slideNumber--;
+    
             carouselSlides.forEach((element, item) => {
                 
                 if (item === slideNumber) {
@@ -31,47 +61,21 @@ window.onload = () => {
                 } else {
                     element.style.display = 'none';
                 }
-
-                if ((slideNumber + 1) === carouselSlidesNumber) {
-                    carouselRightBtn.style.display = 'none';
+    
+                if (slideNumber === 0) {
+                    carouselLeftBtn.style.display = 'none';
                 } else {
-                    carouselRightBtn.style.display = 'block';
-                }
-
-                // Show the left btn if the slideNum is not equal to 0
-                if (slideNumber !== 0) {
                     carouselLeftBtn.style.display = 'block';
                 }
-
+    
+                // Show right button if it is not last image
+                if ((slideNumber + 1) !== carouselSlidesNumber) {
+                    carouselRightBtn.style.display = 'block';
+                }
+    
             })
-
-    })
-
-    // Click left button event
-    carouselLeftBtn.addEventListener('click', () => {
-        slideNumber--;
-
-        carouselSlides.forEach((element, item) => {
-            
-            if (item === slideNumber) {
-                element.style.display = 'block';
-            } else {
-                element.style.display = 'none';
-            }
-
-            if (slideNumber === 0) {
-                carouselLeftBtn.style.display = 'none';
-            } else {
-                carouselLeftBtn.style.display = 'block';
-            }
-
-            // Show right button if it is not last image
-            if ((slideNumber + 1) !== carouselSlidesNumber) {
-                carouselRightBtn.style.display = 'block';
-            }
-
+    
         })
-
-    })
+    }
 
 }
