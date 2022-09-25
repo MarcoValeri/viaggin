@@ -442,6 +442,14 @@ html {
     @media only screen and (max-width: 575px) {
       .article__img {
         width: 100%; } }
+  .article__vai-di-corsa {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    padding: 3rem 1rem 1rem 1rem;
+    margin: 1rem auto;
+    background-color: #f7f7f7;
+    border-radius: 5px; }
   .article .wp-block-image {
     margin: 3rem auto;
     text-align: center; }

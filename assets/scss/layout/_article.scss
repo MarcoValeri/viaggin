@@ -159,6 +159,17 @@
         }
     }
 
+    // Vai di cors block
+    &__vai-di-corsa {
+        width: 80%;
+        height: auto;
+        text-align: center;
+        padding: 3rem 1rem 1rem 1rem;
+        margin: 1rem auto;
+        background-color: $test;
+        border-radius: 5px;
+    }
+
     // Style wp-block image
     .wp-block-image {
         margin: 3rem auto;
