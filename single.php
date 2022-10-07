@@ -65,11 +65,7 @@ if (have_posts()) {
                     <div class="author-card__container-content">
                         <p class="author-card__paragraph body-2">
                             <img class="author-card__img" src="<?= getAuthorImage($postAuthorEmail); ?>" alt="Immagine dell'autorə <?= $postAuthorName . ' ' . $postAuthroSurname; ?>">
-                            Mi chiamo Marco Valeri, sono nato a Roma e attualmente vivo a Londra, città che mi ha cambiato la vita.
-                            Laureato in Computer Science alla Birkbeck University of London, divoro libri, amo scrivere e non mi stanco mai di conoscere cose nuove, soprattutto legate alla comunicazione, alla crescita personale e allo sviluppo del web.
-                            Ho fatto praticamente ogni tipo di lavoro per mantenermi e questo mi ha permesso di capire che l’età non è mai un limite per essere ciò che vuoi essere.
-                            “La disciplina è libertà” è quel concetto che provo a mettere in pratica ogni giorno.
-                            Oggi lavoro a Londra come Software Engineer
+                            <?= get_the_author_meta('description', $authorID); ?>
                         </p>
                     </div>
                 </a>

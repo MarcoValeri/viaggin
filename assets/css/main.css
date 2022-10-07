@@ -351,6 +351,9 @@ html {
   @media only screen and (max-width: 767px) {
     .article {
       width: 100%; } }
+  @media only screen and (max-width: 575px) {
+    .article {
+      padding: 0; } }
   .article h1 {
     font-size: 5rem; }
     @media only screen and (max-width: 767px) {
@@ -712,17 +715,24 @@ html {
       column-gap: 0;
       row-gap: 5rem;
       grid-template-areas: "content__main" "content__sidebar"; } }
+  @media only screen and (max-width: 575px) {
+    .content {
+      width: 100%; } }
   .content__main {
     grid-area: content__main; }
     @media only screen and (max-width: 575px) {
       .content__main {
-        width: 90%; } }
+        width: 90%;
+        margin: auto; } }
   .content__sidebar {
     grid-area: content__sidebar; }
     @media only screen and (max-width: 991px) {
       .content__sidebar {
         width: 90%;
         margin-bottom: 5rem; } }
+    @media only screen and (max-width: 575px) {
+      .content__sidebar {
+        margin: 0 auto 5rem auto; } }
   .content__sidebar-content {
     margin-bottom: 2rem; }
   .content__sidebar-container-title {
@@ -869,10 +879,6 @@ html {
 .author__container-title {
   text-align: center; }
 
-@media only screen and (max-width: 767px) {
-  .home__main {
-    margin-left: 10%; } }
-
 .home__container-categories {
   display: flex;
   align-items: center;
@@ -922,9 +928,6 @@ html {
 .home__container-articles {
   width: 90%;
   margin: 5rem auto; }
-  @media only screen and (max-width: 767px) {
-    .home__container-articles {
-      margin-left: 10%; } }
 
 .home__container-title {
   text-align: center;

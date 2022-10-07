@@ -1,9 +1,9 @@
 .home {
 
     &__main {
-        @include respond(md) {
-            margin-left: 10%;
-        }
+        // @include respond(md) {
+        //     margin-left: 10%;
+        // }
     }
     
     // Main container
@@ -86,9 +86,9 @@
         width: 90%;
         margin: 5rem auto;
 
-        @include respond(md) {
-            margin-left: 10%;
-        }
+        // @include respond(md) {
+        //     margin-left: 10%;
+        // }
     }
 
     &__container-title {
