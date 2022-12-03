@@ -1,4 +1,7 @@
-            </main> <!-- Open on header.php -->
+        <!-- Google Ad Manager AMP Banner Policy -->
+		<amp-consent id="googlefc" layout="nodisplay" type="googlefc"><script type="application/json">{"clientConfig":{"publisherIdentifier":"pub-9306947071363993"}}</script></amp-consent>
+
+		</main> <!-- Open on header.php -->
             <!-- Include sidebar.php -->
             <?php get_sidebar(); ?>
         </div> <!-- Open on hedaer.php with class "content" -->
