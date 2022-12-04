@@ -242,64 +242,64 @@ html {
 
 .carousel {
   width: 80%;
-  margin: 5rem 0; }
+  margin: 2rem 0; }
   @media only screen and (max-width: 575px) {
     .carousel {
       margin: 1rem 0;
       width: 90%; } }
   .carousel__container {
     position: relative;
-    width: 80%;
-    height: 40rem;
+    height: 70rem;
     margin: auto; }
     @media only screen and (max-width: 1499px) {
       .carousel__container {
-        height: 50rem; } }
+        height: 70rem; } }
     @media only screen and (max-width: 1199px) {
       .carousel__container {
         width: 100%; } }
     @media only screen and (max-width: 1499px) {
       .carousel__container {
-        height: 40rem; } }
+        height: 60rem; } }
   .carousel__left-btn {
     display: none;
     position: absolute;
-    top: 50%;
-    left: 0%; }
+    top: 90%;
+    left: 30%; }
     @media only screen and (max-width: 1499px) {
       .carousel__left-btn {
-        top: 85%;
+        top: 90%;
         left: 30%; } }
     @media only screen and (max-width: 1199px) {
       .carousel__left-btn {
-        top: 90%; } }
+        top: 85%; } }
     @media only screen and (max-width: 767px) {
       .carousel__left-btn {
         left: 10%; } }
     @media only screen and (max-width: 575px) {
       .carousel__left-btn {
-        top: 80%; } }
+        top: 70%; } }
   .carousel__right-btn {
     position: absolute;
-    top: 50%;
-    right: 0%; }
+    top: 90%;
+    right: 30%; }
     @media only screen and (max-width: 1499px) {
       .carousel__right-btn {
-        top: 85%;
+        top: 90%;
         right: 30%; } }
     @media only screen and (max-width: 1199px) {
       .carousel__right-btn {
-        top: 90%; } }
+        top: 85%; } }
     @media only screen and (max-width: 767px) {
       .carousel__right-btn {
         right: 10%; } }
     @media only screen and (max-width: 575px) {
       .carousel__right-btn {
-        top: 80%; } }
+        top: 70%; } }
   .carousel__slide {
     position: absolute;
-    width: 70%;
-    max-height: 80%;
+    width: 80%;
+    object-fit: cover;
+    max-height: 60rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }

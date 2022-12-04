@@ -1,6 +1,6 @@
 .carousel {
     width: 80%;
-    margin: 5rem 0;
+    margin: 2rem 0;
 
     @include respond(sm) {
         margin: 1rem 0;
@@ -9,12 +9,11 @@
     
     &__container {
         position: relative;
-        width: 80%;
-        height: 40rem;
+        height: 70rem;
         margin: auto;
 
         @include respond(xxl) {
-            height: 50rem;
+            height: 70rem;
         }
 
         @include respond(xl) {
@@ -22,23 +21,23 @@
         }
 
         @include respond(xxl) {
-            height: 40rem;
+            height: 60rem;
         }
     }
 
     &__left-btn {
         display: none;
         position: absolute;
-        top: 50%;
-        left: 0%;
+        top: 90%;
+        left: 30%;
 
         @include respond(xxl) {
-            top: 85%;
+            top: 90%;
             left: 30%;
         }
 
         @include respond(xl) {
-            top: 90%;
+            top: 85%;
         }
 
         @include respond(md) {
@@ -46,22 +45,22 @@
         }
 
         @include respond(sm) {
-            top: 80%;
+            top: 70%;
         }
     }
 
     &__right-btn {
         position: absolute;
-        top: 50%;
-        right: 0%;
+        top: 90%;
+        right: 30%;
 
         @include respond(xxl) {
-            top: 85%;
+            top: 90%;
             right: 30%;
         }
 
         @include respond(xl) {
-            top: 90%;
+            top: 85%;
         }
 
         @include respond(md) {
@@ -69,14 +68,15 @@
         }
 
         @include respond(sm) {
-            top: 80%;
+            top: 70%;
         }
     }
 
     &__slide {
         position: absolute;
-        width: 70%;
-        max-height: 80%;
+        width: 80%;
+        object-fit: cover;
+        max-height: 60rem;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
