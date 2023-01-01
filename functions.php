@@ -117,7 +117,6 @@ function showBreadcrumbs(): string {
     $getAuthorUrl = get_the_author_meta('user_url');
     $getAuthorName = get_the_author_meta('first_name') . ' ' . get_the_author_meta('last_name');
     $getQueriedObject = get_queried_object();
-    // echo $getQueriedObject->name;
     $breadcrumb = '';
 
     if (isThisUrl(createLink(''))) {

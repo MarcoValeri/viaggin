@@ -47,7 +47,7 @@ $authorDescription = get_the_author_meta('description');
                 $authorPosAuthor = get_the_author();
                 $authorPosImageUrl = get_the_post_thumbnail_url();
                 $authorPosImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
-                $authorPosCommentsNumb = get_comments(['count' => true]);
+                $authorPosCommentsNumb = get_comments_number();
                 $authorPosContent = get_the_content();
         ?>
             <div class="article-card">

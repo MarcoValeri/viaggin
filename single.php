@@ -22,7 +22,7 @@ if (have_posts()) {
         $postCategoryUrl = get_the_category($postID)[0]->slug;
         $postTags = get_the_tags();
 ?>
-        <article class="article">
+        <article <?php post_class('article'); ?> id="post-<?php the_ID(); ?>">
             <h1 class="article__title h1"><?= $postTitle; ?></h1>
             <ul class="article__data">
                 <li class="article__data-item body-3">Autore: <?= $postAuthorName . ' ' . $postAuthroSurname; ?></li>
