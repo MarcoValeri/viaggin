@@ -50,11 +50,7 @@
         <?php
 		wp_body_open();
 		?>
-
-		<!-- AMP Body Google Ads -->
-		<amp-auto-ads type="adsense"
-				data-ad-client="ca-pub-9306947071363993">
-		</amp-auto-ads>
+        
         <header class="header">
             <nav class="nav">
                 <label class="nav__label" for="open">
