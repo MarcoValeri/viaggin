@@ -81,6 +81,20 @@
         );
     }
 
+    // Search Container
+    &__container-search {
+        width: 80%;
+        text-align: center;
+        margin: 5rem auto;
+        padding: 2rem;
+        border-top: 5px solid $yellow-logo;
+        border-bottom: 5px solid $yellow-logo;
+
+        .searchform__input {
+            margin: 2rem auto;
+        }
+    }
+
     // Last articles container
     &__container-articles {
         width: 90%;
