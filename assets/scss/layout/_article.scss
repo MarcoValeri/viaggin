@@ -90,7 +90,7 @@
     }
 
     .table__wrapper {
-        overflow: scroll;
+        overflow: auto;
     }
 
     table {
@@ -100,7 +100,7 @@
     }
 
     table, td, th {
-        font-size: 2rem;
+        font-size: 1rem;
         padding: 1rem;
         text-align: center;
         border: 1px solid black;
