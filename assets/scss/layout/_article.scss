@@ -89,6 +89,10 @@
         }
     }
 
+    .table__wrapper {
+        overflow: scroll;
+    }
+
     table {
         width: 80%;
         border-collapse: collapse;

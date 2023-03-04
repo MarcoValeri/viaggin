@@ -1,0 +1,13 @@
+.searchform {
+    
+    &__input {
+        display: block;
+    }
+
+    &__input-search {
+        width: 80%;
+        font-size: 1.6rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}

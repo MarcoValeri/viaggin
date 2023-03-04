@@ -8,7 +8,7 @@
     <h3 class="h3">Cosa vuoi fare?</h3>
     <div class="error404__404-action-flex">
         <div class="error404__404-action-flex-single">
-            <a href="<?= createLink(''); ?>" class="button button--yellow">Home</a>
+            <a href="<?= createLink('/'); ?>" class="button button--yellow">Home</a>
         </div>
         <div class="error404__404-action-flex-single">
             <a href="<?= createLink('/category/viaggi/'); ?>" class="button button--yellow">Viaggi</a>

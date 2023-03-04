@@ -1,11 +1,22 @@
 <aside class="content__sidebar">
-	<div class="content__sidebar-content">
+    <div class="content__sidebar-content">
         <div class="content__sidebar-container-title">
             <h3 class="content__sidebar-title h4">Cerca su ViaggIn:</h3>
         </div>
+        <?php get_search_form(); ?>
     </div>
-	<script async src="https://cse.google.com/cse.js?cx=9a1c14adc21d26854"></script>
-	<div class="gcse-search"></div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9306947071363993"
+     crossorigin="anonymous"></script>
+	<!-- ViaggIn Sidebar Ads -->
+	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-client="ca-pub-9306947071363993"
+		 data-ad-slot="8434840558"
+		 data-ad-format="auto"
+		 data-full-width-responsive="true"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
     <div class="content__sidebar-content">
         <div class="content__sidebar-container-title">
             <h3 class="content__sidebar-title h4">Seguici su:</h3>
@@ -74,4 +85,11 @@
 	<script>
 		 (adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
+    <div class="content__sidebar-content">
+        <div class="content__sidebar-container-title">
+            <h3 class="content__sidebar-title h4">Cerca su ViaggIn con Google:</h3>
+        </div>
+    </div>
+	<script async src="https://cse.google.com/cse.js?cx=9a1c14adc21d26854"></script>
+	<div class="gcse-search"></div>
 </aside>
