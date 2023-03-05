@@ -6,8 +6,11 @@
     $getSearchQuery = get_search_query();
     
     $argsQuery = [
-        'post_type'     => 'post',
-        's'             => $getSearchQuery
+        'post_type'         => 'post',
+        's'                 => $getSearchQuery,
+        'order'             => 'DESC',
+        'posts_per_page'    => -1
+
     ];
 
     $searchQuery = new WP_Query($argsQuery);
