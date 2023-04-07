@@ -92,4 +92,22 @@
     </div>
 	<script async src="https://cse.google.com/cse.js?cx=9a1c14adc21d26854"></script>
 	<div class="gcse-search"></div>
+    <div class="content__sidebar-content">
+        <div class="content__sidebar-container-title">
+            <h3 class="content__sidebar-title h4">Pronto ad una nuova esperienza in giro per il mondo?</h3>
+        </div>
+        <ins class="bookingaff" data-aid="2330128" data-target_aid="2330128" data-prod="dfl2" data-width="100%" data-height="auto" data-lang="Default (your browser will decide)" data-df_num_properties="3">
+            <!-- Anything inside will go away once widget is loaded. -->
+                <a href="//www.booking.com?aid=2330128">Booking.com</a>
+        </ins>
+        <script type="text/javascript">
+            (function(d, sc, u) {
+            var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = u + '?v=' + (+new Date());
+            p.parentNode.insertBefore(s,p);
+            })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+        </script>
+    </div>
 </aside>

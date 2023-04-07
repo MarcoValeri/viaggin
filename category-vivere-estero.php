@@ -9,6 +9,10 @@
         </div>
     </div>
 </section>
+<section class="home__container-search">
+    <h2 class="h2">Cerca su Viaggi</h2>
+    <?php get_search_form(); ?>
+</section>
 <section class="home__container-articles">
     <div class="home__container-title">
         <h2 class="h2">Vivere all'estero: tutte le guida di ViaggIn</h2>

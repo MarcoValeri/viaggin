@@ -17,7 +17,7 @@
             $lastPostAuthor = get_the_author();
             $lastPostImageUrl = get_the_post_thumbnail_url();
             $lastPostImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
-            $lastPostCommentsNumb = get_comments(['count' => true]);
+            $lastPostCommentsNumb = get_comments(['post_id' => $post->ID, 'count' => true]);
             $lastPostContent = get_the_content();
     ?>
             <div class="article-card">
