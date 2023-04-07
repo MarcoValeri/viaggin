@@ -103,6 +103,24 @@ html {
     .h4 {
       font-size: 2.2rem; } }
 
+.input-text {
+  font-size: 1.6rem;
+  padding: 1rem .5rem;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 5px; }
+  .input-text:focus {
+    border: 1px solid #0c8346; }
+
+.input-textarea {
+  font-size: 1.6rem;
+  padding: 1rem .5rem;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 5px; }
+  .input-textarea:focus {
+    border: 1px solid #0c8346; }
+
 .link {
   text-decoration: none;
   color: #ff785a;
@@ -890,6 +908,58 @@ html {
 
 .author__container-title {
   text-align: center; }
+
+.contact__grid-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  grid-template-areas: "contact__container-header contact__container-header" "contact__container-name contact__container-email" "contact__container-message contact__container-message" "contact__container-button contact__container-button"; }
+  @media only screen and (max-width: 767px) {
+    .contact__grid-form {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      grid-template-areas: "contact__container-header" "contact__container-name" "contact__container-email" "contact__container-message" "contact__container-button"; } }
+
+.contact__container-header {
+  grid-area: contact__container-header; }
+  @media only screen and (max-width: 767px) {
+    .contact__container-header {
+      text-align: center; } }
+
+.contact__container-name {
+  grid-area: contact__container-name; }
+  @media only screen and (max-width: 767px) {
+    .contact__container-name {
+      text-align: center; } }
+
+.contact__container-email {
+  grid-area: contact__container-email; }
+  @media only screen and (max-width: 767px) {
+    .contact__container-email {
+      text-align: center; } }
+
+.contact__container-message {
+  width: 100%;
+  grid-area: contact__container-message; }
+  @media only screen and (max-width: 767px) {
+    .contact__container-message {
+      text-align: center; } }
+
+.contact__container-button {
+  grid-area: contact__container-button; }
+  @media only screen and (max-width: 767px) {
+    .contact__container-button {
+      text-align: center; } }
+
+.contact__input-text {
+  width: 80%; }
+
+.contact__input-textarea {
+  width: 90%;
+  height: 10rem; }
+  @media only screen and (max-width: 767px) {
+    .contact__input-textarea {
+      width: 80%; } }
 
 .home__container-categories {
   display: flex;

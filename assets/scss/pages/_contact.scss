@@ -1,0 +1,77 @@
+.contact {
+    &__grid-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        grid-template-areas:
+        "contact__container-header contact__container-header"
+        "contact__container-name contact__container-email"
+        "contact__container-message contact__container-message"
+        "contact__container-button contact__container-button";
+
+        @include respond(md) {
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+            grid-template-areas:
+            "contact__container-header"
+            "contact__container-name"
+            "contact__container-email"
+            "contact__container-message"
+            "contact__container-button";
+        }
+    }
+
+    &__container-header {
+        grid-area: contact__container-header;
+
+        @include respond(md) {
+            text-align: center;
+        }
+    }
+
+    &__container-name {
+        grid-area: contact__container-name;
+
+        @include respond(md) {
+            text-align: center;
+        }
+    }
+
+    &__container-email {
+        grid-area: contact__container-email;
+
+        @include respond(md) {
+            text-align: center;
+        }
+    }
+
+    &__container-message {
+        width: 100%;
+        grid-area: contact__container-message;
+
+        @include respond(md) {
+            text-align: center;
+        }
+    }
+
+    &__container-button {
+        grid-area: contact__container-button;
+
+        @include respond(md) {
+            text-align: center;
+        }
+    }
+
+    &__input-text {
+        width: 80%;
+    }
+
+    &__input-textarea {
+        width: 90%;
+        height: 10rem;
+
+        @include respond(md) {
+            width: 80%;
+        }
+    }
+}
