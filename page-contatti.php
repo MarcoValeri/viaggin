@@ -111,8 +111,14 @@ if (isset($_POST['contact-submit'])) {
 
     // Send the email
     if ($validForm && count($formErrors) === 0) {
-        $formMessage = wordwrap($formMessage, 100);
-        mail("info@marcovaleri.net", "ViaggIn Contact Form", $formMessage);
+        $setEmailBody = "Name: " . $formName . "<br />";
+        $setEmailBody .= "Email: " . $formEmail . "<br />";
+        $setEmailBody .= "Message:<br />";
+        $setEmailBody .= $formMessage;
+        $emailBody = wordwrap($setEmailBody, 100);
+        mail("info@marcovaleri.net", "ViaggIn Contact Form", $emailBody);
+    } else {
+        $validForm = false;
     }
 }
 
@@ -153,6 +159,11 @@ if (isset($_POST['contact-submit'])) {
             </div>
         </div>
     </form>
+    <?php if ($validForm) { ?>
+        <div class="contact__container-msg">
+            <h4 class="h4">Il tuo messaggio è stato inviato, grazie per averci scritto</h4>
+        </div>
+    <?php } ?>
 </div>
 
 <!-- Include footer.php -->
