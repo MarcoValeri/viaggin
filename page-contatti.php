@@ -111,9 +111,9 @@ if (isset($_POST['contact-submit'])) {
 
     // Send the email
     if ($validForm && count($formErrors) === 0) {
-        $setEmailBody = "Name: " . $formName . "<br />";
-        $setEmailBody .= "Email: " . $formEmail . "<br />";
-        $setEmailBody .= "Message:<br />";
+        $setEmailBody = "Name: " . $formName . "\n";
+        $setEmailBody .= "Email: " . $formEmail . "\n";
+        $setEmailBody .= "Message:\n";
         $setEmailBody .= $formMessage;
         $emailBody = wordwrap($setEmailBody, 100);
         mail("info@marcovaleri.net", "ViaggIn Contact Form", $emailBody);
