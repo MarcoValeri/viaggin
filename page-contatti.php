@@ -1,8 +1,5 @@
 <?php
 
-// include './util/form-validation.php';
-// include get_template_directory() . "/util/form-validation.php";
-
 get_header(); 
 
 ?>
@@ -119,14 +116,7 @@ if (isset($_POST['contact-submit'])) {
     }
 }
 
-
-// session_destroy();
-
 ?>
-
-<!-- <pre>
-    <?php print_r($_SESSION); ?>
-</pre> -->
 
 <div class="contact">
     <form class="contact__form" action="" method="POST">
