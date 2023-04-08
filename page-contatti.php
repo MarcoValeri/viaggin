@@ -125,6 +125,7 @@ if (isset($_POST['contact-submit'])) {
 ?>
 
 <div class="contact">
+    <?php if (!$validForm) { ?>
     <form class="contact__form" action="" method="POST">
         <div class="contact__grid-form">
             <div class="contact__container-header">
@@ -159,6 +160,7 @@ if (isset($_POST['contact-submit'])) {
             </div>
         </div>
     </form>
+    <?php } ?>
     <?php if ($validForm) { ?>
         <div class="contact__container-msg">
             <h4 class="h4">Il tuo messaggio è stato inviato, grazie per averci scritto</h4>
