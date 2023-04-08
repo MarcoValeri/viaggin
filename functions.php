@@ -65,6 +65,17 @@ function viaggin_widgets_init() {
 add_action('widgets_init', 'viaggin_widgets_init');
 
 /**
+ * Se the session
+ */
+function startTheSession() {
+    if (!session_id()) {
+        session_start();
+    }
+}
+
+add_action('init', 'startTheSession');
+
+/**
  * Create a function that gets
  * @param string $authorEmail
  * and

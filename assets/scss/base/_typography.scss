@@ -142,6 +142,70 @@
     }
 }
 
+/**
+* Style for input checkbox.
+*  Following this structure
+*   <label class="input-checkbox-label" for="privacy">Accetto la <a href="<?= createLink('/privacy/'); ?>">Privacy Policy</a>
+*      <input id="privacy" name="privacy" type="checkbox" required />
+*      <span class="input-checkbox-checkmark"></span>
+*   </label>
+*/
+.input-checkbox-label {
+    display: block;
+    position: relative;
+    padding-left: 3.5rem;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+    font-size: 2.2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .input-checkbox-checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: $grey-form;
+    }
+
+    input:checked ~ .input-checkbox-checkmark {
+    background-color: $yellow-logo;
+    }
+
+    .input-checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+
+    input:checked ~ .input-checkbox-checkmark:after {
+    display: block;
+    }
+
+    .input-checkbox-checkmark:after {
+    left: .9rem;
+    top: .5rem;
+    width: .5rem;
+    height: 1rem;
+    border: solid $white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+}
+
 // Link
 .link {
     text-decoration: none;

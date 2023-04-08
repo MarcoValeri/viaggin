@@ -7,6 +7,8 @@
         "contact__container-header contact__container-header"
         "contact__container-name contact__container-email"
         "contact__container-message contact__container-message"
+        "contact__container-privacy contact__container-privacy"
+        "contact__container-errors contact__container-errors"
         "contact__container-button contact__container-button";
 
         @include respond(md) {
@@ -17,6 +19,8 @@
             "contact__container-name"
             "contact__container-email"
             "contact__container-message"
+            "contact__container-privacy"
+            "contact__container-errors"
             "contact__container-button";
         }
     }
@@ -52,6 +56,23 @@
         @include respond(md) {
             text-align: center;
         }
+    }
+
+    &__container-privacy {
+        grid-area: contact__container-privacy;
+    }
+
+    &__container-errors {
+        grid-area: contact__container-errors;
+    }
+
+    &__error-list {
+        list-style: none;
+    }
+
+    &__error {
+        font-size: 1.6rem;
+        color: $red;
     }
 
     &__container-button {

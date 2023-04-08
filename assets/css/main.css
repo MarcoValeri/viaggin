@@ -121,6 +121,57 @@ html {
   .input-textarea:focus {
     border: 1px solid #0c8346; }
 
+/**
+* Style for input checkbox.
+*  Following this structure
+*   <label class="input-checkbox-label" for="privacy">Accetto la <a href="<?= createLink('/privacy/'); ?>">Privacy Policy</a>
+*      <input id="privacy" name="privacy" type="checkbox" required />
+*      <span class="input-checkbox-checkmark"></span>
+*   </label>
+*/
+.input-checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 3.5rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  font-size: 2.2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .input-checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .input-checkbox-label .input-checkbox-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #bababa; }
+  .input-checkbox-label input:checked ~ .input-checkbox-checkmark {
+    background-color: #ffd349; }
+  .input-checkbox-label .input-checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none; }
+  .input-checkbox-label input:checked ~ .input-checkbox-checkmark:after {
+    display: block; }
+  .input-checkbox-label .input-checkbox-checkmark:after {
+    left: .9rem;
+    top: .5rem;
+    width: .5rem;
+    height: 1rem;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
 .link {
   text-decoration: none;
   color: #ff785a;
@@ -913,12 +964,12 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  grid-template-areas: "contact__container-header contact__container-header" "contact__container-name contact__container-email" "contact__container-message contact__container-message" "contact__container-button contact__container-button"; }
+  grid-template-areas: "contact__container-header contact__container-header" "contact__container-name contact__container-email" "contact__container-message contact__container-message" "contact__container-privacy contact__container-privacy" "contact__container-errors contact__container-errors" "contact__container-button contact__container-button"; }
   @media only screen and (max-width: 767px) {
     .contact__grid-form {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
-      grid-template-areas: "contact__container-header" "contact__container-name" "contact__container-email" "contact__container-message" "contact__container-button"; } }
+      grid-template-areas: "contact__container-header" "contact__container-name" "contact__container-email" "contact__container-message" "contact__container-privacy" "contact__container-errors" "contact__container-button"; } }
 
 .contact__container-header {
   grid-area: contact__container-header; }
@@ -944,6 +995,19 @@ html {
   @media only screen and (max-width: 767px) {
     .contact__container-message {
       text-align: center; } }
+
+.contact__container-privacy {
+  grid-area: contact__container-privacy; }
+
+.contact__container-errors {
+  grid-area: contact__container-errors; }
+
+.contact__error-list {
+  list-style: none; }
+
+.contact__error {
+  font-size: 1.6rem;
+  color: #f00; }
 
 .contact__container-button {
   grid-area: contact__container-button; }
