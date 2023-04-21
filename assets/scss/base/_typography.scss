@@ -222,6 +222,12 @@
     color: $black;
 }
 
+.link-no-style--bold {
+    text-decoration: none;
+    color: $black;
+    font-weight: 900;
+}
+
 .link-no-style--white {
     color: $white;
 }

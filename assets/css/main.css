@@ -183,6 +183,11 @@ html {
   text-decoration: none;
   color: #000; }
 
+.link-no-style--bold {
+  text-decoration: none;
+  color: #000;
+  font-weight: 900; }
+
 .link-no-style--white {
   color: #fff; }
 
