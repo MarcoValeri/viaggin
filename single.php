@@ -64,7 +64,7 @@ if (have_posts()) {
                     </div>
                     <div class="author-card__container-content">
                         <p class="author-card__paragraph body-2">
-                            <img class="author-card__img" src="<?= getAuthorImage($postAuthorEmail); ?>" alt="Immagine dell'autorə <?= $postAuthorName . ' ' . $postAuthroSurname; ?>">
+                            <img class="author-card__img" src="<?= getAuthorImage($postAuthorEmail); ?>" alt="Immagine dell'autorə <?= $postAuthorName . ' ' . $postAuthroSurname; ?>" >
                             <?= get_the_author_meta('description', $authorID); ?>
                         </p>
                     </div>
