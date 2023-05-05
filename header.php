@@ -72,7 +72,7 @@
             <div class="header__container">
                 <div class="header__logo">
                     <a href="<?= createLink(''); ?>" aria-label="Link to Homepage">
-                        <img class="header__logo" src="<?= get_template_directory_uri(); ?>/images/viaggin-logo.png" alt="Viaggin Logo" width="" height="">
+                        <img class="header__logo" src="<?= get_template_directory_uri(); ?>/images/viaggin-logo.png" alt="Viaggin Logo" width="150" height="120">
                     </a>
                 </div>
                 <div class="breadcrumbs">

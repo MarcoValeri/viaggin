@@ -66,7 +66,7 @@
                 </div>
                 <div class="article-card__container-content">
                     <div class="article-card__paragraph body-2">
-                        <img class="article-card__img" src="<?= $lastPostImageUrl; ?>" alt="<?= $lastPostImageAlt; ?>" width="" height="">
+                        <img class="article-card__img" src="<?= $lastPostImageUrl; ?>" alt="<?= $lastPostImageAlt; ?>" width="150" height="100">
                         <?php
                         $lastPostExcerpt = substr($lastPostContent, 0, 400);
                         $lastPostExcerptNoHtml = strip_tags($lastPostExcerpt);

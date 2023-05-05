@@ -24,7 +24,7 @@
 
     &__logo {
         display: inline-block;
-        width: 15rem;
+        aspect-ratio: auto 150 / 120;
     }
 
 }

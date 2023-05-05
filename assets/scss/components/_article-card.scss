@@ -43,7 +43,8 @@
     }
 
     &__img {
-        width: 15rem;
+        // width: 15rem;
+        aspect-ratio: 150 / 100;
         float: left;
         margin: 0 1rem .5rem 0;
     }

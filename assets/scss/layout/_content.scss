@@ -80,7 +80,8 @@
     }
 
     &__sidebar-social-icon {
-        width: 5rem;
+        // width: 5rem;
+        aspect-ratio: 50 / 50;
     }
 
 }
