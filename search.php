@@ -43,7 +43,7 @@
                 </div>
                 <div class="article-card__container-content">
                     <div class="article-card__paragraph body-2">
-                        <img class="article-card__img" src="<?= $searchPostImageUrl; ?>" alt="<?= $searchPostImageAlt; ?>" width="" height="">
+                        <img class="article-card__img" src="<?= $searchPostImageUrl; ?>" alt="<?= $searchPostImageAlt; ?>" width="150" height="100">
                         <?php
                         $searchPostExcerpt = substr($searchPostContent, 0, 400);
                         $searchPostExcerptNoHtml = strip_tags($searchPostExcerpt);

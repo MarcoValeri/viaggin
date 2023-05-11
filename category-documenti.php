@@ -48,7 +48,7 @@
             </div>
             <div class="article-card__container-content">
                 <div class="article-card__paragraph body-2">
-                    <img class="article-card__img" src="<?= $documentiPostImageUrl; ?>" alt="<?= $documentiPostImageAlt; ?>">
+                    <img class="article-card__img" src="<?= $documentiPostImageUrl; ?>" alt="<?= $documentiPostImageAlt; ?>" width="150" height="100">
                     <?php
                     $documentiPostExcerpt = substr($documentiPostContent, 0, 400);
                     $documentiPostExcerpt = strip_tags($documentiPostExcerpt);

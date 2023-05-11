@@ -48,7 +48,7 @@
             </div>
             <div class="article-card__container-content">
                 <div class="article-card__paragraph body-2">
-                    <img class="article-card__img" src="<?= $esteroPostImageUrl; ?>" alt="<?= $esteroPostImageAlt; ?>">
+                    <img class="article-card__img" src="<?= $esteroPostImageUrl; ?>" alt="<?= $esteroPostImageAlt; ?>" width="150" height="100">
                     <?php
                     $esteroPostExcerpt = substr($esteroPostContent, 0, 400);
                     $esteroPostExcerptNoHtml = strip_tags($esteroPostExcerpt);
