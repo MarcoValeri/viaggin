@@ -60,7 +60,7 @@ $authorDescription = get_the_author_meta('description');
                     </div>
                     <div class="article-card__container-content">
                         <div class="article-card__paragraph body-2">
-                            <img class="article-card__img" src="<?= $authorPosImageUrl; ?>" alt="<?= $authorPosImageAlt; ?>">
+                            <img class="article-card__img" src="<?= $authorPosImageUrl; ?>" alt="<?= $authorPosImageAlt; ?>" width="150" height="100">
                             <?php
                             $authorPosExcerpt = substr($authorPosContent, 0, 400);
                             $authorPosExcerptNoHtml = strip_tags($authorPosExcerpt);
