@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title><?= wp_title(); ?></title>
 
-        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="125b5024-6fc6-4c41-8490-06af8d0cf0c1" data-blockingmode="auto" type="text/javascript"></script>
+        <!-- Google AdSense Privacy Policy AMP -->
+        <meta name="amp-consent-blocking" content="amp-ad"><script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 
-        <?php // Google Analytics 4 ?>
+        <!-- Google Analytics 4 -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSTXVCFJP7"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -17,13 +18,38 @@
         gtag('config', 'G-FSTXVCFJP7');
         </script>
 
-        <?php // Google AdSense ?>
+        <!-- Google Analytics 4 AMP -->
+        <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+        <amp-analytics type="gtag" data-credentials="include">
+            <script type="application/json">
+            {
+            "vars" : {
+                "gtag_id": "G-FSTXVCFJP7",
+                "config" : {
+                "G-FSTXVCFJP7": { "groups": "default" }
+                }
+            }
+            }
+            </script>
+        </amp-analytics>
+
+        <!-- Google AdSense -->
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9306947071363993" crossorigin="anonymous"></script>
+
+        <!-- Google AdSense AMP -->
+        <script async custom-element="amp-auto-ads"
+                src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+        </script>
 
         <!-- Include wp_head() -->
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
+
+        <!-- Google AdSense AMP -->
+        <amp-auto-ads type="adsense"
+                data-ad-client="ca-pub-9306947071363993">
+        </amp-auto-ads>
 
         <?php
 		wp_body_open();
