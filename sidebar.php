@@ -57,11 +57,6 @@
                 </a>
             </li>
             <li class="content__sidebar-menu-item-list">
-                <a class="link-no-style--bold body-2" href="<?= createLink('/category/eventi/'); ?>" aria-label="Vai alla categoria Eventi">
-                    Eventi
-                </a>
-            </li>
-            <li class="content__sidebar-menu-item-list">
                 <a class="link-no-style--bold body-2" href="<?= createLink('/category/documenti/"'); ?>" aria-label="Vai alla categoria Documenti">
                     Documenti di viaggio
                 </a>

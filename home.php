@@ -8,11 +8,6 @@
             <p class="home__category-description body-2">I Viaggi di <em>ViaggIn</em>: itinerari, destinazioni e curiosità da ogni parte del mondo</p>
             <a class="button button--black" href="<?= createLink('/category/viaggi/'); ?>">Scopri di più</a>
         </div>
-        <div class="home__container-category home__container-eventi">
-            <h2 class="home__category-title h2">Eventi</h2>
-            <p class="home__category-description body-2">Gli Eventi di <em>ViaggIn</em>: musei, sagre, feste, esposizioni e curiosità da ogni parte del mondo</p>
-            <a class="button button--black" href="<?= createLink('/category/eventi/'); ?>">Scopri di più</a>
-        </div>
         <div class="home__container-category home__container-documenti">
             <h2 class="home__category-title h2">Documenti</h2>
             <p class="home__category-description body-2">Documenti di viaggio di <em>ViaggIn</em>: guide per viaggiare informati</p>
