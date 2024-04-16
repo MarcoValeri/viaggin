@@ -41,7 +41,6 @@
                 <ul class="nav__menu">
                     <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('')) ? 'link-mark' : ''; ?>" href="<?= createLink('/') ?>" aria-label="Homepage">Home</li>
                     <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/viaggi')) ? 'link-mark' : ''; ?>" href="<?= createLink('/category/viaggi/'); ?>">Viaggi</a></li>
-                    <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/eventi')) ? 'link-mark' : ''; ?>" href="<?= createLink('/category/eventi/'); ?>">Eventi</a></li>
                     <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/documenti')) ? 'link-mark' : ''; ?>" href="<?= createLink('/category/documenti/'); ?>">Documenti</a></li>
                     <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/category/vivere-estero')) ? 'link-mark' : ''; ?>" href="<?= createLink('/category/vivere-estero/'); ?>">Vivere all'estero</a></li>
                     <li class="nav__item"><a class="link-effect-load <?= isThisUrl(createLink('/chi-siamo')) ? 'link-mark' : ''; ?>" href="<?= createLink('/chi-siamo/'); ?>">Chi siamo</a></li>

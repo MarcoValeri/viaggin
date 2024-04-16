@@ -1,5 +1,8 @@
 <?php
 
+// Remove generic wordpress stuff that's unnecessary for most sites
+require get_template_directory() . '/util/template-tidy.php';
+
 // Add theme support
 add_theme_support('post-thumbnails', ['post', 'page']);
 

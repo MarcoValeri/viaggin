@@ -32,6 +32,7 @@
             $documentiPostUrl = get_permalink();
             $documentiPostTitle = get_the_title();
             $documentiPostDate = get_the_date();
+            $documentiUpdateDate = get_the_modified_date('d/m/Y');
             $documentiPostAuthor = get_the_author();
             $documentiPostImageUrl = get_the_post_thumbnail_url();
             $documentiPostImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
@@ -44,7 +45,7 @@
                 <h2 class="h3"><?= $documentiPostTitle; ?></h2>
             </div>
             <div class="article-card__container-data">
-                <span class="article-card__data body-6">Pubblicato il <?= $documentiPostDate; ?> - <?= $documentiPostAuthor; ?> - <?= $documentiPostCommentsNumb == 1 ? $documentiPostCommentsNumb . ' commento' : $documentiPostCommentsNumb . ' commenti'; ?></span>
+                <span class="article-card__data body-6">Pubblicato il <?= $documentiPostDate; ?> - Ultima modifica <?= $documentiUpdateDate; ?> - <?= $documentiPostAuthor; ?> - <?= $documentiPostCommentsNumb == 1 ? $documentiPostCommentsNumb . ' commento' : $documentiPostCommentsNumb . ' commenti'; ?></span>
             </div>
             <div class="article-card__container-content">
                 <div class="article-card__paragraph body-2">

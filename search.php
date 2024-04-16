@@ -27,6 +27,7 @@
             $searchPostUrl = get_permalink();
             $searchPostTitle = get_the_title();
             $searchPostDate = get_the_date();
+            $searchUpdateDate = get_the_modified_date('d/m/Y');
             $searchPostAuthor = get_the_author();
             $searchPostImageUrl = get_the_post_thumbnail_url();
             $searchPostImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
@@ -39,7 +40,7 @@
                     <h2 class="h3"><?= $searchPostTitle; ?></h2>
                 </div>
                 <div class="article-card__container-data">
-                    <span class="article-card__data body-6">Pubblicato il <?= $searchPostDate; ?> - <?= $searchPostAuthor; ?> - <?= $searchPostCommentsNumb == 1 ? $searchPostCommentsNumb . ' commento' : $searchPostCommentsNumb . ' commenti'; ?></span>
+                    <span class="article-card__data body-6">Pubblicato il <?= $searchPostDate; ?> - Ultima modifica <?= $searchUpdateDate; ?> - <?= $searchPostAuthor; ?> - <?= $searchPostCommentsNumb == 1 ? $searchPostCommentsNumb . ' commento' : $searchPostCommentsNumb . ' commenti'; ?></span>
                 </div>
                 <div class="article-card__container-content">
                     <div class="article-card__paragraph body-2">

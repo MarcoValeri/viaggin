@@ -32,6 +32,7 @@
             $viaggiPostUrl = get_permalink();
             $viaggiPostTitle = get_the_title();
             $viaggiPostDate = get_the_date();
+            $viaggiUpdateDate = get_the_modified_date('d/m/Y');
             $viaggiPostAuthor = get_the_author();
             $viaggiPostImageUrl = get_the_post_thumbnail_url();
             $viaggiPostImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
@@ -44,7 +45,7 @@
                 <h2 class="h3"><?= $viaggiPostTitle; ?></h2>
             </div>
             <div class="article-card__container-data">
-                <span class="article-card__data body-6">Pubblicato il <?= $viaggiPostDate; ?> - <?= $viaggiPostAuthor; ?> - <?= $viaggiPostCommentsNumb == 1 ? $viaggiPostCommentsNumb . ' commento' : $viaggiPostCommentsNumb . ' commenti'; ?></span>
+                <span class="article-card__data body-6">Pubblicato il <?= $viaggiPostDate; ?> - Ultima modifica <?= $viaggiUpdateDate; ?> - <?= $viaggiPostAuthor; ?> - <?= $viaggiPostCommentsNumb == 1 ? $viaggiPostCommentsNumb . ' commento' : $viaggiPostCommentsNumb . ' commenti'; ?></span>
             </div>
             <div class="article-card__container-content">
                 <div class="article-card__paragraph body-2">

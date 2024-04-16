@@ -32,8 +32,8 @@
     $argsPost = [
         'post_type'             => 'post',
         'posts_per_page'        => 10,
+        'orderby'               => 'modified',
         'order'                 => 'DESC',
-        'post_status'           => 'publish'
     ];
 
     $lastPostsQuery = new WP_Query($argsPost);
@@ -45,6 +45,7 @@
             $lastPostUrl = get_permalink();
             $lastPostTitle = get_the_title();
             $lastPostDate = get_the_date();
+            $lastPostUpdateDate = get_the_modified_date('d/m/Y');
             $lastPostAuthor = get_the_author();
             $lastPostImageUrl = get_the_post_thumbnail_url();
             $lastPostImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
@@ -57,7 +58,7 @@
                     <h2 class="h3"><?= $lastPostTitle; ?></h2>
                 </div>
                 <div class="article-card__container-data">
-                    <span class="article-card__data body-6">Pubblicato il <?= $lastPostDate; ?> - <?= $lastPostAuthor; ?> - <?= $lastPostCommentsNumb == 1 ? $lastPostCommentsNumb . ' commento' : $lastPostCommentsNumb . ' commenti'; ?></span>
+                    <span class="article-card__data body-6">Pubblicato il <?= $lastPostDate; ?> - Ultima modifica <?= $lastPostUpdateDate; ?> - <?= $lastPostAuthor; ?> - <?= $lastPostCommentsNumb == 1 ? $lastPostCommentsNumb . ' commento' : $lastPostCommentsNumb . ' commenti'; ?></span>
                 </div>
                 <div class="article-card__container-content">
                     <div class="article-card__paragraph body-2">

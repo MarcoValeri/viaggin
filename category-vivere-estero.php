@@ -32,6 +32,7 @@
             $esteroPostUrl = get_permalink();
             $esteroPostTitle = get_the_title();
             $esteroPostDate = get_the_date();
+            $esteroUpdateDate = get_the_modified_date('d/m/Y');
             $esteroPostAuthor = get_the_author();
             $esteroPostImageUrl = get_the_post_thumbnail_url();
             $esteroPostImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
@@ -44,7 +45,7 @@
                 <h2 class="h3"><?= $esteroPostTitle; ?></h2>
             </div>
             <div class="article-card__container-data">
-                <span class="article-card__data body-6">Pubblicato il <?= $esteroPostDate; ?> - <?= $esteroPostAuthor; ?> - <?= $esteroPostCommentsNumb == 1 ? $esteroPostCommentsNumb . ' commento' : $esteroPostCommentsNumb . ' commenti'; ?></span>
+                <span class="article-card__data body-6">Pubblicato il <?= $esteroPostDate; ?> - Ultima modifica <?= $esteroUpdateDate; ?> - <?= $esteroPostAuthor; ?> - <?= $esteroPostCommentsNumb == 1 ? $esteroPostCommentsNumb . ' commento' : $esteroPostCommentsNumb . ' commenti'; ?></span>
             </div>
             <div class="article-card__container-content">
                 <div class="article-card__paragraph body-2">
