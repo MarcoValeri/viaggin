@@ -18,8 +18,8 @@ if (have_posts()) {
         $postUpdateDate = get_the_modified_date('d-m-Y');
         $postCommentsNum = get_comments_number();
         $postContent = get_the_content();
-        $postCategoryName = get_the_category($postID)[0]->name;
-        $postCategoryUrl = get_the_category($postID)[0]->slug;
+        $postCategoryName = isset(get_the_category($postID)[0]->name) ? get_the_category($postID)[0]->name : '';
+        $postCategoryUrl = isset(get_the_category($postID)[0]->slug) ? get_the_category($postID)[0]->slug : '';
         $postTags = get_the_tags();
 ?>
         <article <?php post_class('article'); ?> id="post-<?php the_ID(); ?>">

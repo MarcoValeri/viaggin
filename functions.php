@@ -159,7 +159,7 @@ function showBreadcrumbs(): string {
         $breadcrumb = '<a class="breadcrumbs__item link-no-style body-4" href="' . createLink('') . '">Home</a>';
         $breadcrumb .= '<span class="breadcrumbs__item-span"> / </span>';
         $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="' . createLink('/contatti/') . '">Contatti</a>';
-    } else if (is_single() && get_post_type() == 'post') {
+    } else if (is_single() && get_post_type() == 'post' && count($getPostCategory) > 0) {
         $breadcrumb = '<a class="breadcrumbs__item link-no-style body-4" href="' . createLink('') . '">Home</a>';
         $breadcrumb .= '<span class="breadcrumbs__item-span"> / </span>';
         $breadcrumb .= '<a class="breadcrumbs__item link-no-style body-4" href="' . createLink('/viaggin/category/' . $getPostCategory[0]->slug) . '">' . $getPostCategory[0]->name . '</a>';
