@@ -9,10 +9,13 @@ add_theme_support('post-thumbnails', ['post', 'page']);
 // Load JavaScript and css files
 function viaggin_enqueue_script() {
 
-    wp_enqueue_style('style-css', get_stylesheet_directory_uri() . '/style.css', [], time(), 'all');
-    wp_enqueue_style('main-css', get_stylesheet_directory_uri() . '/assets/css/main.css', ['style-css'], time(), 'all');
+    wp_enqueue_style('style-css', get_template_directory_uri() . '/style.css', [], time(), 'all');
+    wp_enqueue_style('main-css', get_template_directory_uri() . '/assets/css/main.css', ['style-css'], time(), 'all');
 
-    wp_enqueue_script('carousel', get_stylesheet_directory_uri() . '/assets/js/carousel.js', [], 1, true);
+    wp_enqueue_script('carousel', get_template_directory_uri() . '/assets/js/carousel.js', [], 1, true);
+    wp_enqueue_script('cookiebot-on-decline', get_template_directory_uri() . '/assets/js/cookiebot-on-decline.js', [], 1, true);
+    wp_enqueue_script('cookiebot-on-accept', get_template_directory_uri() . '/assets/js/cookiebot-on-accept.js', [], 1, true);
+    wp_enqueue_script('cookiebot-ban', get_template_directory_uri() . '/assets/js/cookie-ban.js', [], 1, true);
 }
 
 add_action('wp_enqueue_scripts', 'viaggin_enqueue_script');

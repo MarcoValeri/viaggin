@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass assets/scss/main.scss assets/css/main.css -w"
+    "scss": "sass assets/scss/main.scss assets/css/main.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/MarcoValeri/viaggin#readme",
   "dependencies": {
-    "node-sass": "^7.0.1"
+    "sass": "^1.75.0"
   }
 }
