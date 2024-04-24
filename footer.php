@@ -20,8 +20,9 @@
                 </div>
                 <div class="cookie-ban__container-buttons">
                     <button id="cookie-ban-accept" class="button button--black">Accetta i cookies</button>
-                    <!-- <p class="body-2"><em>oppure</em></p> -->
-                    <!-- <button class="button button--white">Ricevi l'articolo in PDF per euro 2</button> -->
+                    <p class="body-2"><em>oppure</em></p>
+                    <button id="cookie-ban-subscription" class="button button--white">Scarica l'articolo in PDF per euro 2</button>
+                    <p id="cookie-ban-no-available" class="cookie-ban__no-available body-3"><em>Opzione ancora non disponibile per questo contenuto</em></p>
                 </div>
                 <div class="cookie-ban__container-thank">
                     <p class="body-2">Grazie per il supporto</p>

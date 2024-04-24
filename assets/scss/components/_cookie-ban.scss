@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 10%;
+    top: 0;
     background-color: $white;
     overflow: auto;
     z-index: 100;
@@ -38,6 +38,11 @@
         text-align: center;
         gap: 2rem;
         margin-bottom: 2rem;
+    }
+
+    &__no-available {
+        display: none;
+        color: $red;
     }
 
     &__container-thank {

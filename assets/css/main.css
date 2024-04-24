@@ -505,7 +505,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  top: 10%;
+  top: 0;
   background-color: #fff;
   overflow: auto;
   z-index: 100;
@@ -529,7 +529,7 @@ body {
   margin-bottom: 2rem;
 }
 .cookie-ban__title {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .cookie-ban__container-buttons {
   display: flex;
@@ -537,6 +537,10 @@ body {
   text-align: center;
   gap: 2rem;
   margin-bottom: 2rem;
+}
+.cookie-ban__no-available {
+  display: none;
+  color: #f00;
 }
 .cookie-ban__container-thank {
   text-align: center;
