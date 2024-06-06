@@ -6,9 +6,6 @@
         <title><?= wp_title(); ?></title>
         <link rel="icon" type="image/x-icon" href="<?= get_template_directory_uri(); ?>/images/viaggin-logo.png">
 
-        <?php // Cookie Bot ?>
-        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="761841fa-19f1-48dc-967d-cdacf58a4a75" data-blockingmode="auto" type="text/javascript"></script>
-
         <?php // Google Analytics 4 ?>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSTXVCFJP7"></script>
         <script>
